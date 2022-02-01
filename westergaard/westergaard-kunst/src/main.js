@@ -1,10 +1,10 @@
 import { createApp } from 'vue'
+
 import App from './App.vue'
-
-import Header from './components/Header.vue'
-
+import router from './router.js'
 
 const app = createApp(App)
 
-app.component('header-component', Header)
+app.use(router)
+
 app.mount('#app')

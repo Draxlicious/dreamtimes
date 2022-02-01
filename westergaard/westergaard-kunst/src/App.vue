@@ -1,19 +1,14 @@
 <template>
-<div>
-  <head>
-    <link rel="stylesheet" href="./bootstrap-5.0.2/dist.css/bootstrap.css">
-  </head>
-  <body>
-    <header-component></header-component>
-    
-  </body>
-</div>
+  <the-header></the-header>
+    <router-view></router-view>
 </template>
 
 <script>
-
+import TheHeader from './components/layout/TheHeader.vue'
 export default {
-
+  components:{
+    TheHeader
+  }
 }
 </script>
 
