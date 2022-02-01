@@ -13,8 +13,49 @@ export default {
 </script>
 
 <style>
+html{
+  font-family : "proxima-nova";
+  }
+
+h1{
+    font-family: "museo-sans",serif;
+    font-size: 72px;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-family: "ltc-bodoni-175";
+    font-size: 54px;
+    line-height: 1em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    padding-left: 0px;
+    -webkit-backface-visibility: hidden;
+
+}
+
+h2{
+  font-family: "museo-sans",serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-family: "ltc-bodoni-175";
+    font-size: 4em;
+    line-height: 1em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    padding-left: 0px;
+    -webkit-backface-visibility: hidden;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -24,5 +65,10 @@ export default {
 body{
   margin:0;
   height:100vh;
+}
+
+.container{
+    text-align: center;
+    padding: 80px 0;
 }
 </style>
