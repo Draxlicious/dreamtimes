@@ -12,3 +12,11 @@
         </div>
     </main>
 </template>
+
+
+<style scoped>
+    main{
+        background-color: rgba(90,90,90,.03);
+        padding: 5em 0;
+    }
+</style>

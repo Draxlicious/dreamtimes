@@ -16,7 +16,7 @@
                 <router-link to="/Contact">Contact</router-link>
         </ul>
     </nav>
-    <div class="container">
+    <div class="site--title">
         <h1>Westergaard</h1>
     </div>
 </template>
@@ -42,14 +42,14 @@
 <style scoped>
 
     nav{
-    font-family: "museo-sans",sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.3em;
-    text-align: center;
+        font-family: "museo-sans",sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.3em;
+        text-align: center;
     }
 
     .westergaard--title{
@@ -67,29 +67,34 @@
         background-color:#212121;
         min-height: 7em;
     }
-    ul a{
-        color: #fff;
-        text-decoration: none;
-    }
     .ul__desk a{
+        position: relative;
         color: #fff;
         padding: 2em;
-        position: relative;
     }
-    .ul__desk a:hover::before{
+
+    .ul__desk a::before{
+        transition: all 500ms linear;
         content: '';
         position: absolute;
         bottom: 25%;
         left: 0;
         right: 0;
-        border-bottom: 1px solid #fff;
+        width: 0;
+        height:1px;
+        background-color: white;
+        
+    }
+    .ul__desk a:hover::before{
+        content: '';
+        width: 100%;
+        
     }
     .ul__desk{
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #212121;
-        width: 100%;
         margin: 0;
     }
 
