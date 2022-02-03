@@ -40,38 +40,6 @@ h1{
 
 }
 
-h2{
-  font-family: "museo-sans",serif;
-  font-weight: 100;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-  font-family: "ltc-bodoni-175";
-  font-size: 4em;
-  line-height: 1em;
-  text-transform: none;
-  letter-spacing: 0px;
-  font-weight: 400;
-  font-style: italic;
-  margin: 0;
-  padding-left: 0px;
-  -webkit-backface-visibility: hidden;
-}
-
-h1:not(.site-title), h2, h3, h4 {
-    font-family: "museo-sans",serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 1.2em;
-    font-family: "ltc-bodoni-175";
-    line-height: 1.4em;
-    text-transform: none;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-style: normal;
-    color: #6a6262;
-    margin: 2em 0 1em 0;
-}
 
 #app {
   -webkit-font-smoothing: antialiased;
@@ -91,6 +59,13 @@ li{
   list-style-type: none;
 }
 
+
+img{
+    width: 100%;
+    height:auto
+}
+
+
 .site--title{
   text-align: center;
   padding: 80px 0;
@@ -98,5 +73,27 @@ li{
 .container{
   padding: 0 15em;
 }
+
+.main-container{
+    background-color: rgba(90,90,90,.03);
+    padding: 5em 30em;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: center;
+}
+
+
+  @media only screen and (max-width: 1800px) {
+  .main-container {
+      padding: 5em 12em;
+  }
+  }
+  @media only screen and (max-width: 1000px) {
+  .main-container {
+      padding: 5em 2em;
+  }
+  }
 
 </style>

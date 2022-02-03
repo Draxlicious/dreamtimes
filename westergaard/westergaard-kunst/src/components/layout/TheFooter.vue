@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer container ">
+    <footer class="footer ">
         <div class="d-justify">
             <div>
                 <p class="opening-detail" >
@@ -19,10 +19,10 @@
                 <a href="https://www.instagram.com/pallewestergaard5/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
             </div>
         </div>
-            <div class="return-information">
-                <a href="#">SHIPPING & RETURNS</a>
-                <a href="#">TERMS & PRIVACY</a>
-            </div>
+        <div class="return-information">
+            <a href="#">SHIPPING & RETURNS</a>
+            <a href="#">TERMS & PRIVACY</a>
+        </div>
     </footer>
 </template>
 
@@ -30,7 +30,7 @@
 <style scoped>
     .footer{
         text-align: left;
-        padding: 5em 18em;
+        
     }
 
     .opening-detail{
@@ -55,6 +55,7 @@
 
     a i{
         color: #333;
+        margin:0.5em;
         transition: opacity 200ms linear;
     }
     a i:hover{
@@ -75,5 +76,32 @@
     }
     .return-information a:hover{
         opacity: 0.5;
+    }
+
+
+    @media only screen and (max-width: 1263px) {
+        footer {
+            padding:3em;
+        }
+        .d-justify{
+            justify-content: unset;
+            flex-direction: column;
+        }
+        a i{
+            display: flex;
+            justify-content: center;
+        }
+        .return-information{
+            flex-direction: column;
+        }
+        .return-information a{
+            text-align: center;
+            padding-bottom:0.5em 0
+        }
+    }
+    @media only screen and (min-width: 1264px) {
+        footer {
+             padding: 0 18em;
+        }
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
-    Home
-    <main>
+    <h2>Home</h2>
+    <main class="main-container">
         <div>
             <img src="https://picsum.photos/500/600" alt="">
         </div>
@@ -15,8 +15,7 @@
 
 
 <style scoped>
-    main{
-        background-color: rgba(90,90,90,.03);
-        padding: 5em 0;
-    }
+
+
+
 </style>

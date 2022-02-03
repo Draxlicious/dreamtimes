@@ -70,7 +70,7 @@
     .ul__desk a{
         position: relative;
         color: #fff;
-        padding: 2em;
+        padding: 2em 3em;
     }
 
     .ul__desk a::before{
@@ -102,12 +102,12 @@
         padding: 1em;
     }
 
-    @media only screen and (min-width: 412px) {
+    @media only screen and (min-width: 649px) {
         .ul__element {
             display: none;
         }
     }
-    @media only screen and (max-width: 412px) {
+    @media only screen and (max-width: 650px) {
         .ul__desk {
             display: none;
         }
