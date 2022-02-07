@@ -4,7 +4,7 @@
         <div class="d-flex">
             <img src="https://picsum.photos/500/600" alt="">
             <div class="information-details">
-                <h2>Dream times v. Palle Westergaard</h2>
+                <h2 class="contact-title">Dream times v. Palle Westergaard</h2>
                 <p>Kontakt information samt kontakt format til meddelelser: Palle Westergaard</p>
                 <p>H. C. Ørstedsvej 8, 1879 Frederiksberg C.</p>
                 <p>E-mail: pallewestergaard@hotmail.com</p>
@@ -26,13 +26,11 @@ img{
 }
 .information-details{
     padding-left:3em;
+    color: #333;
 }
 
-h2{
+.contact-title{
     font-weight: 400;
     color: #6a6262;
-}
-p{
-    color: #333;
 }
 </style>

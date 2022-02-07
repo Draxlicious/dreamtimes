@@ -268,4 +268,7 @@
       font-weight: 700;
       color: white;
     }
+    .bm-item-list a{
+      color:#fff;
+    }
 </style>

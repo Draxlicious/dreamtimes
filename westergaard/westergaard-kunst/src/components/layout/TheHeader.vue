@@ -1,9 +1,9 @@
 <template>
     <nav>
         <ul class="ul__element">
-            <h2 class="westergaard--title">Westergaard</h2>
+             <router-link to="/"><h2 class="westergaard--title">Westergaard</h2></router-link>
             <BurgerMenu v-bind="this.$attrs" @openMenu="openMenu" @closeMenu="closeMenu">
-                    <a href="/">Home</a>
+                    <a  href="/">Home</a>
                     <a href="/Presentation">Presentational</a>
                     <a href="/News">News</a>
                     <a href="/Contact">Contact</a>
@@ -16,8 +16,8 @@
                 <router-link to="/Contact">Contact</router-link>
         </ul>
     </nav>
-    <div class="site--title">
-        <h1>Westergaard</h1>
+    <div>
+        <router-link to="/"><h1 class="site--title">{{ title }}</h1></router-link>
     </div>
 </template>
 
@@ -28,12 +28,21 @@
       components: {
         BurgerMenu
       },
+      data() {
+    return {
+            title: 'Westergaard',
+            isActive: false
+            }
+        },
       methods: {
         openMenu() {
           this.$emit('openMenu');
         },
         closeMenu() {
           this.$emit('closeMenu');
+        },
+        addActive(){
+            this.isActive = !this.isActive
         }
       }
     };
@@ -43,7 +52,7 @@
 
     nav{
         font-family: "museo-sans",sans-serif;
-        font-size: 12px;
+        font-size: 0.8em;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: 400;
@@ -51,11 +60,13 @@
         line-height: 1.3em;
         text-align: center;
     }
-
-    .westergaard--title{
-        color: #fff;
+    .site--title{
+        transition: opacity 200ms linear;
+        opacity: 1;
     }
-
+    .site--title:hover{
+        opacity: 0.7;
+    }
     .ul__element{
         display: flex;
         justify-content: center;
@@ -83,12 +94,10 @@
         width: 0;
         height:1px;
         background-color: white;
-        
     }
     .ul__desk a:hover::before{
         content: '';
         width: 100%;
-        
     }
     .ul__desk{
         display: flex;
@@ -97,11 +106,9 @@
         background-color: #212121;
         margin: 0;
     }
-
     ul a  {
         padding: 1em;
     }
-
     @media only screen and (min-width: 649px) {
         .ul__element {
             display: none;

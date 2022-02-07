@@ -1,18 +1,17 @@
 <template>
     <h2>Home</h2>
     <main class="main-container">
-        <div>
-            <img src="https://picsum.photos/500/600" alt="">
-        </div>
-        <div>
-            <img src="https://picsum.photos/500/600" alt="">
-        </div>
-        <div>
-            <img src="https://picsum.photos/500/600" alt="">
-        </div>
+        <home-images></home-images>
     </main>
 </template>
 
+<script>
+import HomeImages from '../../components/ui/HomeImages.vue'
+export default {
+  components: { HomeImages },
+    
+}
+</script>
 
 <style scoped>
 

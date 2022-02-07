@@ -29,6 +29,7 @@
 
 <style scoped>
     .footer{
+        margin-top:1em;
         text-align: left;      
     }
     .opening-detail{

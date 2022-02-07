@@ -52,7 +52,7 @@ body{
   height:100vh;
 }
 a{
-  color: #fff;
+  color: #333;
   text-decoration: none;
 }
 li{
@@ -80,7 +80,7 @@ img{
   }
   @media only screen and (min-width: 1268px) {
     .main-container {
-      padding: 5em 20%;   
+      padding: 5em 20%;
     }
   }
 

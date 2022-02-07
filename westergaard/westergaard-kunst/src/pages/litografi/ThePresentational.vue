@@ -1,29 +1,15 @@
 <template>
-    Presentational
+    <h2>Presentational</h2>
     <main class="main-container">
-        <section class="grid-section">
-            <div v-for="(image, index) in images" :key="index">
-                <!-- <img :src="require(`../../assets/static/${image}`)" alt=""> -->
-                <img :src="image.imagePath" alt="">
-            </div>
-        </section>
+        <router-view></router-view>
+        <presentational-images></presentational-images>
     </main>
 </template>
 
-<style scoped>
-.grid-section{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-img{
-    height:500px;
-    width: 500px;
-}
-</style>
-
 <script>
+import PresentationalImages from '../../components/ui/PresentationalImages.vue'
 export default {
+  components: { PresentationalImages },
     data() {
         return {
             // image: ['IMG_3920.jpg',]
@@ -36,9 +22,26 @@ export default {
                 },
                 {
                     imagePath: require(`../../assets/static/IMG_3924.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/IMG_3925.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/IMG_3929.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/IMG_3949.jpg`)
                 }
             ]
         }
     }
 }
 </script>
+
+<style scoped>
+.main-container{
+    padding: 5em 10%;
+}
+
+
+</style>
