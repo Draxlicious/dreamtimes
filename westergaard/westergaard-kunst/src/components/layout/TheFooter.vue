@@ -3,9 +3,9 @@
         <div class="d-justify">
             <div>
                 <p class="opening-detail" >
-                    Bendtsens Danas plads 10, 1915 Frederiksberg C <br>
-                    Tlf. 2440 0213 <br>
-                    Mandag og Tirsdag (Lukket) <br>
+                    Bendtsens Danas plads 10, 1915 Frederiksberg C<br>
+                    Tlf. 2440 0213<br>
+                    Mandag og Tirsdag (Lukket)<br>
                     Onsdag - Fredag 13.00 - 17.30 Lørdag 11.00 - 14.30
                 </p>
                 <p>
@@ -29,10 +29,8 @@
 
 <style scoped>
     .footer{
-        text-align: left;
-        
+        text-align: left;      
     }
-
     .opening-detail{
         font-family: "ltc-bodoni-175";
         line-height: 1.4em;
@@ -43,16 +41,9 @@
         color: #6a6262;
         font-size: 1.3em;
     }
-
     .b{
         line-height:3
     }
-
-    .d-justify{
-        display: flex;
-        justify-content: space-between;
-    }
-
     a i{
         color: #333;
         margin:0.5em;
@@ -61,7 +52,6 @@
     a i:hover{
         opacity: 0.5;
     }
-
     a{
         color: #333;
     }
@@ -71,23 +61,18 @@
         padding-top:2em;
     }
     .return-information a{
-        padding-left: 1em;
+        padding-bottom: 1em;
         transition: opacity 200ms linear;
     }
     .return-information a:hover{
         opacity: 0.5;
     }
-
-
     @media only screen and (max-width: 1263px) {
         footer {
             padding:3em;
         }
-        .d-justify{
-            justify-content: unset;
-            flex-direction: column;
-        }
         a i{
+            margin-top:2em;
             display: flex;
             justify-content: center;
         }
@@ -96,12 +81,22 @@
         }
         .return-information a{
             text-align: center;
-            padding-bottom:0.5em 0
+            padding-bottom:0.5em;
         }
     }
     @media only screen and (min-width: 1264px) {
         footer {
-             padding: 0 18em;
+            padding: 0 18em;
+        }
+        .return-information a{
+            padding: 2em 1em;
+        }
+    }
+    
+    @media only screen and (min-width: 767px) {
+        .d-justify{
+            display: flex;
+            justify-content: space-between;
         }
     }
 </style>

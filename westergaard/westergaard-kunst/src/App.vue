@@ -58,42 +58,30 @@ a{
 li{
   list-style-type: none;
 }
-
-
 img{
     width: 100%;
     height:auto
 }
-
-
 .site--title{
   text-align: center;
   padding: 80px 0;
 }
-.container{
-  padding: 0 15em;
-}
-
 .main-container{
     background-color: rgba(90,90,90,.03);
-    padding: 5em 30em;
+    padding: 5em 5%;
 }
-
 .d-flex{
   display: flex;
   justify-content: center;
 }
 
+  @media only screen and (min-width: 767px) {
 
-  @media only screen and (max-width: 1800px) {
-  .main-container {
-      padding: 5em 12em;
   }
-  }
-  @media only screen and (max-width: 1000px) {
-  .main-container {
-      padding: 5em 2em;
-  }
+  @media only screen and (min-width: 1268px) {
+    .main-container {
+      padding: 5em 20%;   
+    }
   }
 
 </style>

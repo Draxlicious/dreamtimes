@@ -2,7 +2,10 @@
     Presentational
     <main class="main-container">
         <section class="grid-section">
-            <img :src="require(`../../assets/static/${image}`)" alt="">
+            <div v-for="(image, index) in images" :key="index">
+                <!-- <img :src="require(`../../assets/static/${image}`)" alt=""> -->
+                <img :src="image.imagePath" alt="">
+            </div>
         </section>
     </main>
 </template>
@@ -23,9 +26,18 @@ img{
 export default {
     data() {
         return {
-            
-            image: 'IMG_3920.jpg'
-           
+            // image: ['IMG_3920.jpg',]
+            images: [
+                {
+                    imagePath: require(`../../assets/static/IMG_3920.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/IMG_3921.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/IMG_3924.jpg`)
+                }
+            ]
         }
     }
 }
