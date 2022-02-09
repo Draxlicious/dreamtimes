@@ -13,7 +13,7 @@ const router = createRouter({
         {   path: '/', component: TheHome },
         {   path: '/presentation', component: ThePresentational,
             children: [
-                { path: ':imageInfo', component: PresentationalDetails, props: true }
+                { path: ':id', component: PresentationalDetails, props: true }
             ] 
         },
         {   path: '/news', component: TheNews },
