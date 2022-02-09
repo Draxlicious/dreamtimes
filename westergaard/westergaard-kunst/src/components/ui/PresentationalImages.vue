@@ -17,25 +17,53 @@ export default {
             // image: ['IMG_3920.jpg',]
             images: [
                 {
-                    imagePath: require(`../../assets/static/IMG_3920.jpg`),
-                    information: 'Moderne abstrakt og ny ekspressionistisk akvarel af Jon Gislason 11000 kr. (som præsenteret) .13500 kr. (m. beige passepartout & dybrød træramme, eller efter aftale).'
+                    imagePath: require(`../../assets/static/Værk_1.jpg`),
+                    information: 'Moderne abstrakt og ny ekspressionistisk akvarel af Jon Gislason.'
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3921.jpg`),
+                    imagePath: require(`../../assets/static/Værk_2.jpg`),
                     information: 'this is a test for image 2'
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3924.jpg`)
+                    imagePath: require(`../../assets/static/Værk_3.jpg`)
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3925.jpg`)
+                    imagePath: require(`../../assets/static/Værk_4.jpg`)
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3929.jpg`)
+                    imagePath: require(`../../assets/static/Værk_5.jpg`)
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3949.jpg`)
-                }
+                    imagePath: require(`../../assets/static/Værk_11.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_12.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_13.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_14.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_15.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_16.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_17.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_18.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_19.jpg`)
+                },
+                {
+                    imagePath: require(`../../assets/static/Værk_20.jpg`)
+                },
+                
             ]
         }
     }
@@ -45,12 +73,13 @@ export default {
 <style scoped>
 .grid-section{
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3em;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
 }
 img{
-    width: 100%;
-    aspect-ratio: 1;
+    /* height:500px; */
+    /* width: 100%; */
+    /* aspect-ratio: 1; */
 }
 .image-cover{
     position: relative;
@@ -87,6 +116,19 @@ img{
 }
 .image-cover:hover .image-information{
     opacity: 1;
+}
+
+@media only screen and (min-width: 650px) {
+  .grid-section{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+}
+@media only screen and (min-width: 1250px) {
+  .grid-section{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+    }
 }
 
 </style>

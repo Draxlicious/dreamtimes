@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul class="ul__element">
-             <router-link to="/"><h2 class="westergaard--title">Westergaard</h2></router-link>
+             <router-link to="/"><h2 class="westergaard--title">Westergaards</h2></router-link>
             <BurgerMenu v-bind="this.$attrs" @openMenu="openMenu" @closeMenu="closeMenu">
                     <a  href="/">Home</a>
                     <a href="/Presentation">Presentational</a>
@@ -30,7 +30,7 @@
       },
       data() {
     return {
-            title: 'Westergaard',
+            title: 'Westergaards',
             isActive: false
             }
         },
@@ -108,6 +108,9 @@
     }
     ul a  {
         padding: 1em;
+    }
+    a .westergaard--title{
+        color:#fff;
     }
     @media only screen and (min-width: 649px) {
         .ul__element {

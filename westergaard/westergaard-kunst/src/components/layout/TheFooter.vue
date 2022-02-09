@@ -3,20 +3,17 @@
         <div class="d-justify">
             <div>
                 <p class="opening-detail" >
-                    Bendtsens Danas plads 10, 1915 Frederiksberg C<br>
-                    Tlf. 2440 0213<br>
-                    Mandag og Tirsdag (Lukket)<br>
-                    Onsdag - Fredag 13.00 - 17.30 Lørdag 11.00 - 14.30
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, deserunt magni in modi rerum veniam quos consequuntur quisquam neque? Quis aut nisi a laudantium deleniti recusandae officia. Eius esse totam nisi numquam, et accusamus, corporis nihil dolores, molestiae blanditiis ipsam tempora natus ab! Nostrum dolorum dignissimos sint consequuntur commodi minus.
                 </p>
                 <p>
                     <b>
                         <p>Bemærk: Vi sender kun de indrammede værker med posten, efter aftale. De skal venligst afhentes</p>
-                        <p>hos Bendtsens på adresse Frederiksberg C. Kontakt Palle på mobil 00 00 00 00</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, porro!</p>
                     </b>
                 </p>
             </div>
             <div>
-                <a href="https://www.instagram.com/pallewestergaard5/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.instagram.com/pw_kunst/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
             </div>
         </div>
         <div class="return-information">

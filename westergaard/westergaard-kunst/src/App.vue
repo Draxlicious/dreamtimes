@@ -64,7 +64,7 @@ img{
 }
 .site--title{
   text-align: center;
-  padding: 80px 0;
+  margin: 80px 0;
 }
 .main-container{
     background-color: rgba(90,90,90,.03);

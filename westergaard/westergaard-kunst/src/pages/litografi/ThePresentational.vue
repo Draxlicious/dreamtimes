@@ -15,22 +15,22 @@ export default {
             // image: ['IMG_3920.jpg',]
             images: [
                 {
-                    imagePath: require(`../../assets/static/IMG_3920.jpg`)
+                    imagePath: require(`../../assets/static/Værk_1.jpg`)
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3921.jpg`)
+                    imagePath: require(`../../assets/static/Værk_2.jpg`)
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3924.jpg`)
+                    imagePath: require(`../../assets/static/Værk_3.jpg`)
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3925.jpg`)
+                    imagePath: require(`../../assets/static/Værk_4.jpg`)
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3929.jpg`)
+                    imagePath: require(`../../assets/static/Værk_5.jpg`)
                 },
                 {
-                    imagePath: require(`../../assets/static/IMG_3949.jpg`)
+                    imagePath: require(`../../assets/static/Værk_6.jpg`)
                 }
             ]
         }
@@ -40,7 +40,12 @@ export default {
 
 <style scoped>
 .main-container{
-    padding: 5em 10%;
+    padding: 5em 5%;
+}
+@media only screen and (min-width: 1250px) {
+  .grid-section{
+        padding: 5em 10%;
+    }
 }
 
 
