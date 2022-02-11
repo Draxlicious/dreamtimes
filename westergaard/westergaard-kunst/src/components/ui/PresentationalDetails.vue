@@ -10,7 +10,6 @@
         <p>{{image.title}}</p>
       </div> -->
 
-   <img :src="images.imagePath" alt="" />
       
 
   </section>
