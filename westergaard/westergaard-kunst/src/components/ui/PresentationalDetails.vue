@@ -1,35 +1,45 @@
 <template>
-        <h2>User {{ $route.params.id }}</h2>
-        <h1>Hello Image details</h1>
   <section class="grid-section">
-      <p>{{ image.id }}</p>
-      <p>{{ image.imagePath}}</p>
-      <p>{{ image.information}}</p>
+      <!-- <h2>User {{ $route.params.id }}</h2>
+      <h1>Hello Image details {{ $route.params.id }}</h1> -->
+      <h1>{{id}}</h1>
+      <!-- <img :src="images.imagePath" alt="" />
+      <p>{{images.title}}</p> -->
+      <!-- <div v-for="image in images" :key="image.id">
+        <img :src="image.imagePath" alt="" />
+        <p>{{image.title}}</p>
+      </div> -->
+
+   <img :src="images.imagePath" alt="" />
+      
+
   </section>
 </template>
 
 <script>
 export default {
+  props:['id','images'],
   data() {
     return {
       // image: ['IMG_3920.jpg',]
-      images: [
-        {
-            id:1,
-            imagePath: require(`../../assets/static/Værk_1.jpg`),
-            information:
-            "Moderne abstrakt og ny ekspressionistisk akvarel af Jon Gislason 11000 kr. (som præsenteret) .13500 kr. (m. beige passepartout & dybrød træramme, eller efter aftale).",
-        },
-        {
-            id:2,
-            imagePath: require(`../../assets/static/Værk_2.jpg`),
-            information: "this is a test for image 2",
-        },
-        {
-            id:3,
-            imagePath: require(`../../assets/static/Værk_3.jpg`),
-        },
-      ],
+      // images: [
+      //   {
+      //       id:1,
+      //       title:'image 1',
+      //       imagePath: require(`../../assets/static/værk_1.jpg`),
+      //   },
+      //   {
+      //       id:2,
+      //       title:'image 2',
+      //       imagePath: require(`../../assets/static/værk_2.jpg`),
+      //       information: "this is a test for image 2",
+      //   },
+      //   {
+      //       id:3,
+      //       title:'image 3',
+      //       imagePath: require(`../../assets/static/værk_3.jpg`),
+      //   },
+      // ],
       computed:{
           destinationId(){
               return parseInt(this.$route.params.id)

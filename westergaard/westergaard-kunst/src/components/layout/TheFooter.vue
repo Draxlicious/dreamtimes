@@ -3,12 +3,17 @@
         <div class="d-justify">
             <div>
                 <p class="opening-detail" >
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, deserunt magni in modi rerum veniam quos consequuntur quisquam neque? Quis aut nisi a laudantium deleniti recusandae officia. Eius esse totam nisi numquam, et accusamus, corporis nihil dolores, molestiae blanditiis ipsam tempora natus ab! Nostrum dolorum dignissimos sint consequuntur commodi minus.
+                   www.Westergaards.site <br>
+                    Frederiksberg C <br>
+                    Tlf. 0045 20868462 (opringning, besked og SMS) <br>
+                    pallewestergaard@hotmail.com <br>
+                    CVR 37288586
+
                 </p>
                 <p>
                     <b>
-                        <p>Bemærk: Vi sender kun de indrammede værker med posten, efter aftale. De skal venligst afhentes</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, porro!</p>
+                        <!-- <p>Bemærk: Vi sender kun de indrammede værker med posten, efter aftale. De skal venligst afhentes</p> -->
+                        <p>Ved køb aftales afhentning eller levering fra min side.<br> Ved overdragelsen betaling i form af kontant, bankoverførsel eller mobil pay efter aftale (faktura og kvittering).</p>
                     </b>
                 </p>
             </div>
@@ -31,7 +36,7 @@
     }
     .opening-detail{
         font-family: "ltc-bodoni-175";
-        line-height: 1.4em;
+        line-height: 1.8em;
         text-transform: none;
         letter-spacing: 0px;
         font-weight: 400;

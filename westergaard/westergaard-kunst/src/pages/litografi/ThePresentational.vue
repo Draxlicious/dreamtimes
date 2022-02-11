@@ -1,5 +1,4 @@
 <template>
-    <h2>Presentational</h2>
     <main class="main-container">
         <router-view></router-view>
         <presentational-images></presentational-images>
@@ -37,16 +36,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-.main-container{
-    padding: 5em 5%;
-}
-@media only screen and (min-width: 1250px) {
-  .grid-section{
-        padding: 5em 10%;
-    }
-}
-
-
-</style>

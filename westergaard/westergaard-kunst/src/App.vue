@@ -68,7 +68,7 @@ img{
 }
 .main-container{
     background-color: rgba(90,90,90,.03);
-    padding: 5em 5%;
+    padding: 0 5%;
 }
 .d-flex{
   display: flex;

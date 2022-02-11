@@ -1,7 +1,6 @@
 <template>
     <section class="grid-section">
             <div v-for="(image, index) in images" :key="index">
-                <!-- <img :src="require(`../../assets/static/${image}`)" alt=""> -->
                 <img class="home-images" :src="image.imagePath" alt="">
             </div>
         </section>
@@ -11,7 +10,6 @@
 export default {
     data() {
         return {
-            // image: ['IMG_3920.jpg',]
             images: [
                 {
                     imagePath: require(`../../assets/static/Forside_1.jpg`)
@@ -28,15 +26,6 @@ export default {
                 {
                     imagePath: require(`../../assets/static/Forside_5.jpg`)
                 },
-                // {
-                //     imagePath: require(`../../assets/static/IMG_3925.jpg`)
-                // },
-                // {
-                //     imagePath: require(`../../assets/static/IMG_3929.jpg`)
-                // },
-                // {
-                //     imagePath: require(`../../assets/static/IMG_3949.jpg`)
-                // }
             ]
         }
     }
