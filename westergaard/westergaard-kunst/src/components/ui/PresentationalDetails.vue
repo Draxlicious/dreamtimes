@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  props:['id','images'],
+  props:['id'],
   data() {
     return {
       // image: ['IMG_3920.jpg',]

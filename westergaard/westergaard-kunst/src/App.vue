@@ -16,10 +16,12 @@ export default {
 </script>
 
 <style>
+*{
+  box-sizing: border-box;
+  }
 html{
   font-family : "proxima-nova";
   }
-
 h1{
   font-family: "museo-sans",serif;
   font-size: 72px;
@@ -37,10 +39,7 @@ h1{
   margin: 0;
   padding-left: 0px;
   -webkit-backface-visibility: hidden;
-
 }
-
-
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

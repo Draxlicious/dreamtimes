@@ -1,23 +1,25 @@
 <template>
-    <nav>
-        <ul class="ul__element">
-             <router-link to="/"><h2 class="westergaard--title">Westergaards</h2></router-link>
-            <BurgerMenu v-bind="this.$attrs" @openMenu="openMenu" @closeMenu="closeMenu">
-                    <a  href="/">Home</a>
-                    <a href="/Presentation">Presentational</a>
-                    <a href="/News">News</a>
-                    <a href="/Contact">Contact</a>
-            </BurgerMenu>
-        </ul>
-        <ul class="ul__desk">
-                <router-link to="/">Home</router-link>
-                <router-link to="/Presentation">Presentational</router-link>
-                <router-link to="/News">News</router-link>
-                <router-link to="/Contact">Contact</router-link>
-        </ul>
-    </nav>
     <div>
-        <router-link to="/"><h1 class="site--title">{{ title }}</h1></router-link>
+        <nav>
+            <ul class="ul__element">
+                <router-link to="/"><h2 class="westergaard--title">Westergaards</h2></router-link>
+                <BurgerMenu v-bind="this.$attrs" @openMenu="openMenu" @closeMenu="closeMenu">
+                        <a  href="/">Home</a>
+                        <a href="/Presentation">Presentational</a>
+                        <a href="/News">News</a>
+                        <a href="/Contact">Contact</a>
+                </BurgerMenu>
+            </ul>
+            <ul class="ul__desk">
+                    <router-link to="/" :class="{active:selected == 1}" @click="selected = 1">Home</router-link>
+                    <router-link to="/Presentation" :class="{active:selected == 2}" @click="selected = 2">Presentational</router-link>
+                    <router-link to="/News" :class="{active:selected == 3}" @click="selected = 3">News </router-link>
+                    <router-link to="/Contact" :class="{active:selected == 4}" @click="selected = 4">Contact</router-link>
+            </ul>
+        </nav>
+        <div>
+            <router-link to="/"><h1 class="site--title">{{ title }}</h1></router-link>
+        </div>
     </div>
 </template>
 
@@ -31,7 +33,8 @@
       data() {
     return {
             title: 'Westergaards',
-            isActive: false
+            isActive: false,
+            selected: 1
             }
         },
       methods: {
@@ -48,8 +51,10 @@
     };
 </script>
 
-<style scoped>
-
+<style >
+    .active{
+        border-bottom: 1px solid white;
+    }
     nav{
         font-family: "museo-sans",sans-serif;
         font-size: 0.8em;
@@ -81,24 +86,27 @@
     .ul__desk a{
         position: relative;
         color: #fff;
-        padding: 2em 3em;
+        margin: 2em 3em;
+        /* border-bottom: 1px solid transparent; */
     }
-
-    .ul__desk a::before{
+    .ul__desk a:hover{
+        /* border-bottom: 1px solid white; */
+    }
+    /* .ul__desk a::before{
         transition: all 500ms linear;
         content: '';
         position: absolute;
-        bottom: 25%;
+        bottom: -25%;
         left: 0;
         right: 0;
         width: 0;
         height:1px;
         background-color: white;
-    }
-    .ul__desk a:hover::before{
+    } */
+    /* .ul__desk a:hover::before{
         content: '';
         width: 100%;
-    }
+    } */
     .ul__desk{
         display: flex;
         justify-content: center;
@@ -107,7 +115,7 @@
         margin: 0;
     }
     ul a  {
-        padding: 1em;
+        margin: 1em;
     }
     a .westergaard--title{
         color:#fff;

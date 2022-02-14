@@ -1,9 +1,9 @@
 <template>
     <section class="grid-section">
 
-        <div v-for="image in images" :key="image.id">
+        <!-- <div v-for="image in images" :key="image.id">
             <router-link :to="{ name: 'ImageDetails', params: { id: image.id } }"><h2>{{ image.title }}</h2></router-link>
-        </div>
+        </div> -->
 
             <div v-for="(image, index) in images" :key="index" class="image-cover">
                 <div class="image-information">
