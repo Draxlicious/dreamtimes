@@ -6,10 +6,12 @@
         </div> -->
 
             <div v-for="(image, index) in images" :key="index" class="image-cover">
-                <div class="image-information">
-                    {{ image.information }}
-                </div>
-                    <img :src="image.imagePath" alt="">
+                 <router-link :to="{ name: 'ImageDetails', params: { id: image.id } }">
+                    <div class="image-information">
+                        {{ image.information }}
+                    </div>
+                <img :src="image.imagePath" alt="">
+                </router-link>
                 <!-- <img :src="require(`../../assets/static/${image}`)" alt=""> -->
             </div>
         </section>

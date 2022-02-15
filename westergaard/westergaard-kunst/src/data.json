@@ -2,17 +2,17 @@
           "images": [
         {
             "id":1,
-            "imagePath": "require(`../../assets/static/Værk_1.jpg`)",
+            "imagePath": "værk_1",
             "information":"Moderne abstrakt og ny ekspressionistisk akvarel af Jon Gislason 11000 kr. (som præsenteret) .13500 kr. (m. beige passepartout & dybrød træramme, eller efter aftale)."
         },
         {
             "id":2,
-            "imagePath": "require(`../../assets/static/Værk_2.jpg`)",
+            "imagePath": "require(`../../assets/static/værk_2.jpg`)",
             "information": "this is a test for image 2"
         },
         {
             "id":3,
-            "imagePath": "require(`../../assets/static/Værk_3.jpg`)"
+            "imagePath": "require(`../../assets/static/værk_3.jpg`)"
         }
       ]
     }
