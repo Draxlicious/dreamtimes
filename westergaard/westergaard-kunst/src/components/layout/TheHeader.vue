@@ -32,7 +32,7 @@
       },
       data() {
     return {
-            title: 'Westergaards',
+            title: 'westergaards.site',
             isActive: false,
             selected: 1
             }

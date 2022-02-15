@@ -5,7 +5,7 @@
             <div class="information-details">
                 <h2 class="contact-title">Dream times v. Palle Westergaard</h2>
                 <p>Kontakt information samt kontakt format til meddelelser: Palle Westergaard</p>
-                <p>H. C. Ørstedsvej 8, 1879 Frederiksberg C.</p>
+                <p>Frederiksberg C.</p>
                 <p>E-mail: pallewestergaard@hotmail.com</p>
                 <p>Mob.:  0045 20868462.</p>
             </div>
