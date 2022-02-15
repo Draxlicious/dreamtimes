@@ -174,6 +174,12 @@ export default {
     letter-spacing: 1px;
     font-weight: 700;
     min-width: 10em;
+    height:100%;
+    width:100%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .image-cover:hover .image-information{
     opacity: 1;

@@ -1,17 +1,16 @@
 <template>
-  <section class="grid-section">
+  <main class="main-container">
       <!-- <h2>User {{ $route.params.id }}</h2>
       <h1>Hello Image details {{ $route.params.id }}</h1> -->
       <h1>{{id}}</h1>
       <!-- <img :src="images.imagePath" alt="" />
       <p>{{images.title}}</p> -->
+      <div class="d-flex">
         <img :src="destination.imagePath" class="imageDetails"/>
-        <p>{{destination.information}}</p>
+        <p class="imageInformation">{{destination.information}}</p>
+      </div>
 
-
-      
-
-  </section>
+  </main>
 </template>
 
 <script>
@@ -143,52 +142,22 @@ export default {
 </script>
 
 <style scoped>
-.grid-section {
-  /* display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3em; */
-}
-img {
-  width: 100%;
-  aspect-ratio: 1;
-}
-.image-cover {
-  position: relative;
-}
-.image-cover::before {
-  content: "";
-  transition: all 200ms linear;
-}
-.image-cover:hover::before {
-  content: "";
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.4);
-  color: #fff;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  cursor: pointer;
-}
-.image-information {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all 200ms linear;
-  text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
-  cursor: pointer;
-  font-style: italic;
-  font-family: "ltc-bodoni-175";
-  font-size: 1.2em;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-.image-cover:hover .image-information {
-  opacity: 1;
-}
 .imageDetails{
-  width:50%;
+  width:100%;
+}
+.d-flex{
+  flex-direction: column;
+}
+@media only screen and (min-width: 1250px) {
+  .d-flex{
+        flex-direction: row;
+    }
+  .imageInformation{
+      margin: 2em;
+    }
+  .imageDetails{
+    width:50%;
+  }
 }
 
 </style>
