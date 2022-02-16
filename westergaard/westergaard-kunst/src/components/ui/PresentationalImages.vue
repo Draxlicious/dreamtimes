@@ -157,7 +157,6 @@ export default {
     width: 100%;
     opacity: 1;
     cursor: pointer;
-    
 }
 .image-information{
     position: absolute;
@@ -180,6 +179,31 @@ export default {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.image-information::after{
+    content:'Show Details';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: all 200ms linear;
+    text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+    cursor: pointer;
+    font-style: italic;
+    font-family: "ltc-bodoni-175";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    min-width: 10em;
+    height:65px;
+    width:50px;
+    background-color:#fff;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
 }
 .image-cover:hover .image-information{
     opacity: 1;

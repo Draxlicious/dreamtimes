@@ -35,7 +35,7 @@ export default {
                 {
                     id: 1,
                     title:'image 1',
-                    imagePath: require(`../../assets/static/værk_1.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_1.jpg`),
                     artist: 'Moderne, originalt dansk litografi (kunsttryk) af Hans Scherfig (f. København 1905, d. Fredensborg 1979).',
                     information: '”Fællesskabet” sign. Scherfig 1972, nr. 242/280. Litografi i farver. Lysmål 41 x 60 cm. Rammemål 63 x 80 cm.',
                     captured: 'Indrammet med knækket hvid passepartout og gylden træramme med en grå stribe. Trykt på L´Arches papir på U.M. Grafik´s værksted i dag Edition København (www.editioncopenhagen.com)',
@@ -45,7 +45,7 @@ export default {
                 {
                     id: 2,
                     title:'image 2',
-                    imagePath: require(`../../assets/static/værk_2.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_2.jpg`),
                     artist: 'Moderne, originalt dansk litografi (kunstryk) af Henry Heerup (f. Frederiksberg 1907, d. 1993 i Rødovre).',
                     information: '”Hjertets Dramatik” sign. Heerup. Trykt 1969, nr. 73/310. Litografi i farver. Lysmål 41 x 60 cm. Rammemål 63 x 80 cm. Sjældent udbudt.',
                     captured: 'Indrammet med knækket hvid passepartout og sølvfarvet træramme. Trykt på Arches papir på I. Chr. Sørensens værksted i Hjørring. I dag Hjørring Grafisk Værksted (www.hgv.dk) ',
@@ -55,7 +55,7 @@ export default {
                 {
                     id: 3,
                     title:'image 3',
-                    imagePath: require(`../../assets/static/værk_3.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_3.jpg`),
                     artist: 'Moderne, originalt dansk litografi (kunstryk) af Henry Heerup (f. Frederiksberg 1907, d. 1993 i Rødovre).',
                     information: '”Øresundsmøde”, sign. Heerup. Trykt 1970, nr. 76/150. Litografi i farver. Lysmål 64 x 75 cm. Rammemål 70 x 90 cm. Sjældent udbudt.',
                     captured: 'Indrammet med knækket hvid passepartout og gylden træramme. Trykt på Arches papir af Sandberg, Galerie Börjeson, Malmø.',
@@ -65,18 +65,18 @@ export default {
                 {
                     id: 4,
                     title:'image 4',
-                    imagePath: require(`../../assets/static/værk_4.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_4.jpg`),
                     artist: 'Moderne, originalt dansk original litografi (kunsttryk) af Henry Heerup (f. Frederiksberg 1907, d. 1993 i Rødovre).',
                     information: '”Jeg kysser dig veninde…”, sign Heerup, Trykt 1977, nr. nummeret (E.A). Litografi i farver. Lysmål 48 x 61. Rammemål 55 x 73 cm. Sjældent udbudt.',
                     captured: 'Indrammet med knækket beige passepartout og gylden trætræramme. Trykt på Arches papir af I. Chr. Sørensen, Hjørring for Louisiana kunstmuseum.',
                     story: 'For Heerup var kunsten og legen 2 sider af samme sag. Hans kunst kredsede omkring kvinden, familien og det levede liv. Han var selverklæret formand for nisserne, fløjtespiller, elskede katte, nøgenbader og cyklede til sin sidste dag. Han var grafiker, maler, stenhugger og skraldemodels skaber.  Se Heerup museet i Rødovre (www.heerup.dk).',
-                    price: '2.000.00 kr. Uden ramme ',
+                    price: '2.000 kr. Uden ramme ',
                     priceWithFrame: '3.400 kr. Indrammet'
                 },
                 {
                     id: 5,
                     title:'image 5',
-                    imagePath: require(`../../assets/static/værk_5.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_5.jpg`),
                     artist: 'Moderne, original koldnåls radering af Gynter Grass (f. 1927 i Gdansk i Polen, d. 2015 i Lybeck, Tyskland).',
                     information: '”Woman in the Halibut”, sign. Gynter Grass, trykt i 1983, nr. XII/L. Koldnålsradering i sort/hvid. Lysmål 17 x 24 cm. Rammemål 50 x 64 cm. Meget sjældent udbudt.',
                     captured: 'Indrammet u. passepartout med grafisk tryk i papiret og med en sort alu. ramme. Trykt på grafisk papir.',
@@ -85,7 +85,7 @@ export default {
                 },
                 {
                     id: 6,
-                    imagePath: require(`../../assets/static/værk_6.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_6.jpg`),
                     artist: 'Moderne abstrakt og ny ekspressionistisk akvarel af Jon Gislason født 1955 i Ry, Danmark.',
                     information: '”Selvportræt” sign. Jon Gislason, malet i 1990. Lysmål 56 x 74 cm. Rammemål 60 x 80 cm. Unika.',
                     captured: 'Indrammet u. passepartout på håndlavet bøttepapir med sølvfarvet alu. ramme.',
@@ -95,7 +95,7 @@ export default {
                 },
                 {
                     id: 7,
-                    imagePath: require(`../../assets/static/værk_7.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_7.jpg`),
                     artist: 'Moderne non figurativt og originalt litografi af Anton Roskens f. 1906 i Griendveen og d. 1976ni Amsterdam.',
                     information: '”Komposition med figurer”, originalt farve litografi, trykt i 1967. Nr. 98/100. Lysmål 30 x 38 cm. Rammemål 41 x 49 cm. ',
                     captured: 'Indrammet uden passepartout på håndlavet bøttepapir med mat sølvfarvet alu. ramme',
@@ -105,7 +105,7 @@ export default {
                 },
                 {   
                     id: 8,
-                    imagePath: require(`../../assets/static/værk_8.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_8.jpg`),
                     artist: 'Moderne surrealistisk originalt litografi af Hans Henrik Lerfeldt f. 1946 i Århus og d. 1989 i København, uddannet fra det Kongelige Danske Kunstakademi.',
                     information: '”Kvinde med græshoppe”, farve litografi, trykt 1988 nr. LII/CXVI. Lysmål 30 x 40 cm. Rammemål 49 x 61 cm. Signeret Lerfeldt.',
                     captured: 'Indrammet med passepartout på Arches papir med mat sølvfarvet træramme.',
@@ -114,7 +114,7 @@ export default {
                 },
                 {
                     id: 9,
-                    imagePath: require(`../../assets/static/værk_9.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_9.jpg`),
                     artist: 'Moderne ekspressionistisk og surrealistisk originalt farve litografi af Hans Christian Rylander f. 1939 i København og d. 2021 i Nykøbing Falster. Uddannet lærer og fra Kunstakademiets kunstpædagogiske skole i København.',
                     information: '”Et ulige forhold”, farve litografi, trykt i 19 farver 1987. Nr. 126/150. Lysmål 49 x 68. Rammemål 65 x 87 cm. Signeret H C Rylander.',
                     captured: 'Indrammet med passepartout og trykt på på D’Arches papir og med forgyldt alu ramme. Trykt hos UM Grafik København i dag Edition Copenhagen. www.editioncopenhagen.com',
@@ -123,7 +123,7 @@ export default {
                 },
                 {
                     id: 10,
-                    imagePath: require(`../../assets/static/værk_10.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_10.jpg`),
                     artist: 'Maler, grafiker og forfatter Herman Stillings originale farve litografi er med en rød trold. Han er f. 1925 i København og d. 1996 i København. Han var uddannet på Kunstakademiet og troldene blev hans kunstneriske skæbne.',
                     information: '”Den røde trold”, farve litografi, trykt i 1986. Nr. 196/270. Lysmål 37 x 48 cm. Rammemål 40 x 48 cm. Signeret Herman Stilling',
                     captured: 'Indrammet med lys passepartout og trykt på D´Arches papir med sølvfarvet alu. ramme. Trykt hos UM Grafik, København (i dag Edition Copenhagen). (www.editioncopenhagen.com)',
@@ -132,7 +132,7 @@ export default {
                 },
                 {
                     id: 11,
-                    imagePath: require(`../../assets/static/værk_11.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_11.jpg`),
                     artist: 'Niels Reumert er ekspressionist, maler og grafiker og står bag en serie af små farve litografier med bl.a. børn som motiv, her ”At bære”, født i Hellerup i 1949. Han er maler og grafiker og uddannet på Kunstakademiet.',
                     information: '”At bære”, originalt farve litografi er trykt i 1989. Nr. 107/120. Lysmål 24 x 27 cm. Rammemål 36 x 41 cm.',
                     captured: 'Indrammet med beige passepartout og trykt på D´Arches papir med guld farvet alu. ramme. Trykt første gang og i lille oplag hos UM Grafik, København (i dag Copenhagen Edition). ( www.editioncopenhagen.com)',
@@ -141,7 +141,7 @@ export default {
                 },
                 {
                     id: 12,
-                    imagePath: require(`../../assets/static/værk_12.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_12.jpg`),
                     artist: 'Pia Andersen arbejder med originalt litografi, maleri, glas og keramik. Født 1960 i Frederikshavn. Uddannet på kunsthåndværkerskolen i Kolding og Kunstakademiet i Krakow.',
                     information: '”Abstrakt, gul, blå, rød”, farvelitografi trykt i 2002. Tryk nr. 15/150. Lysmål 21 x 29 cm. Rammemål 36/43 cm. Signeret Pia Andersen.',
                     captured: 'Indrammet med beige passepartout og trykt på D´Arches papir og med hvidpigmenteret træramme. Trykt af Edition Copenhagen (www.editioncopenhagen.com).',
@@ -150,7 +150,7 @@ export default {
                 },
                 {
                     id: 13,
-                    imagePath: require(`../../assets/static/værk_13.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_13.jpg`),
                     artist: 'Bent Holstein. Maler og grafiker, født i København i 1942. Han er autodidakt og har skrevet om- og lavet film bl.a. for DR om kunst.',
                     information: '”Pelikanen”, originalt farve litografi trykt i 1975. Tryk 244/300. Lysmål 55 x 74 cm. Rammemål 75 x 90 cm. Signeret Holstein.',
                     captured: 'Indrammet med lyst passepartout og trykt på D´Arches papir og med gylden alu. Ramme. Trykt hos Hostrup- Pedersen og Johansen, Valby, København (www.litoggrafisk.dk) ',
@@ -159,7 +159,7 @@ export default {
                 },
                 {
                     id: 14,
-                    imagePath: require(`../../assets/static/værk_14.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_14.jpg`),
                     artist: 'John Hartmann. Maler og grafiker født i Canada, Ontario, 1950, uddannet fra McMaster University i Hamilton 1973. Bosat i Canada.',
                     information: '”The Riot”, originalt farvelitografi trykt ca. 1984. Tryk 82/190. Lysmål 54 x 71 cm. Rammemål 72 x 88 cm.',
                     captured: 'Indrammet med lyst passepartout og trykt på D´Arches papir og med sølvfarvet alu. Ramme. Trykt hos U.M. Grafik, København, i dag Copenhagen Edition (www.editioncopenhagen.com). Sjældent udbudt.',
@@ -168,7 +168,7 @@ export default {
                 },
                 {
                     id: 15,
-                    imagePath: require(`../../assets/static/værk_15.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_15.jpg`),
                     artist: 'Seppo Mattinen, finsk maler og grafiker f. 1930 i Helsingfors, Finland og d. 2022 i København. Uddannet på Kunstakademiet i København.',
                     information: '”Længsler”, et originalt træsnit trykt i farver i 1978. Tryk nr. 96/200. Lysmål 43/51 cm og rammemål 63/71. Signeret Seppo Mattinen.',
                     captured: 'Indrammet med lyst passepartout og trykt på grafisk papir og med en gylden træramme. Udgivet af Clausens kunsthandel, København (www.clausenskunshandel.dk)',
@@ -177,7 +177,7 @@ export default {
                 },
                 {
                     id: 16,
-                    imagePath: require(`../../assets/static/værk_16.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_16.jpg`),
                     artist: 'Barry Lereng Willmont, f. 1936 I Canada, maler, grafiker og forfatter. Uddannet på Kunstakademiet på København.',
                     information: '”Sommernattens smil”, originalt litografisk farve tryk fra 1988 nr. 72/90. Lysmål 55/72. Rammemål 72/90. Signeret Wilmont.',
                     captured: 'Indrammet med lyst passepartout og trykt på D´Arches papir og med en sølvfarvet alu ramme. Trykt af U.M. Grafik, København, i dag Edition Copenhagen (www.editioncopenhagen.com).',
@@ -186,7 +186,7 @@ export default {
                 },
                 {
                     id: 17,
-                    imagePath: require(`../../assets/static/værk_17.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_17.jpg`),
                     artist: 'Gunleif Grube f. Thorshavn, Færøerne 1947. Han er maler, grafiker, forfatter og komponerer musik.',
                     information: '”Passion”, originalt farve litografi, trykt 1992, nr. 41/60. Lysmål 49/63 cm.  Rammemål 60/80 cm. Signeret Gunleif.',
                     captured: 'Indrammet og trykt på litografisk papir og med en alu sølvramme. Trykt af Galleri Egelund, København, i dag Galleri Christoffer Egelund (www.artdelivery.dk/galleri) ',
@@ -195,7 +195,7 @@ export default {
                 },
                 {
                     id: 18,
-                    imagePath: require(`../../assets/static/værk_18.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_18.jpg`),
                     artist: 'Tonny Hørning er en dansk maler og skulptør, autodidakt, oprindeligt uddannet som skiltemaler og født 1941 i Silkeborg.',
                     information: '”Særegen skønhed” originalt silketryk (serigrafi), skabt i 1975, nr. 77/500 (signatur med nål for neden til venstre i værkets sølvkarton). Lysmål 49/70 cm. Rammemål 60/83 cm. Signeret Hørning.',
                     captured: 'Indrammet og trykt på sort kardus og sølvfarvet karton og med en sølvfarvet alu ramme. Trygt på kunstnerens værksted.',
@@ -204,7 +204,7 @@ export default {
                 },
                 {
                     id: 19,
-                    imagePath: require(`../../assets/static/værk_19.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_19.jpg`),
                      artist: 'Carl Aage Riget, dansk maler og billedhugger, oprindeligt skiltemaler, som kunstner autodidakt, f. 1933 i Aarhus og d. 2001 i Nykøbing Sjælland.',
                     information: '”Festival nr 2” originalt farve silketryk (serigrafi), skabt i 1980. nr. 207/300. Lysmå51/54 cm og rammemål 64/73 cm. Signeret K Riget.',
                     captured: 'Indrammet og med lys passepartout og trykt på karton og med en sølvfarvet alu ramme.',
@@ -213,7 +213,7 @@ export default {
                 },
                 {
                     id: 20,
-                    imagePath: require(`../../assets/static/værk_20.jpg`),
+                    imagePath: require(`../../assets/static/details/detail_20.jpg`),
                     artist: 'Per Baagøe, dansk kunstmaler og grafiker, ekspressionist, uddannet på Kunstakademiet, f. juleaften 1946 i København.',
                     information: '”Landevej i Odsherred” (bemærk katten i vejsiden) originalt litografi skabt i 1990, nr. XLVIII/L. Signeret Per Baagøe. Lysmål 46/63 cm. Rammemål 64/80 cm. ',
                     captured: 'Indrammet med lyst passepartout og trykt på L´Arhes papir og med en sølv alu. Ramme.',
@@ -305,6 +305,9 @@ hr{
     }
     .main-container {
         padding: 5em 15%;
+    }
+    .imageDetails{
+        width: 70%;
     }
 }
 
