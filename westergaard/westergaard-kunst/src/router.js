@@ -11,13 +11,16 @@ const router = createRouter({
     history: createWebHistory(),
     routes:[
         {   path: '/', component: TheHome },
-        {   path: '/presentation', component: ThePresentational },
+        {   path: '/presentation', name: 'PresentationalPage', component: ThePresentational },
         {   path: '/presentation/:id', name: 'ImageDetails', component: PresentationalDetails, props: true },
         {   path: '/news', component: TheNews },
         {   path: '/contact', component: TheContact },
         {   path: '/:notFound(.*)', component: NotFound },
 
-    ]
+    ],
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+    }
 })
 
 export default router;

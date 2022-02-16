@@ -2,9 +2,10 @@
   <main class="main-container">
       <!-- <h2>User {{ $route.params.id }}</h2>
       <h1>Hello Image details {{ $route.params.id }}</h1> -->
-      <h1>{{id}}</h1>
+      <!-- <h1>{{id}}</h1> -->
       <!-- <img :src="images.imagePath" alt="" />
       <p>{{images.title}}</p> -->
+      
       <div class="d-flex">
         <img :src="destination.imagePath" class="imageDetails"/>
         <div class="imageInformation">
@@ -15,6 +16,9 @@
             <p class="imageInformation--information">{{ destination.information }}</p>
             <p class="imageInformation--information">{{ destination.captured }}</p>
             <p class="imageInformation--information">{{ destination.story }}</p>
+            <div class="arrow-back--container">
+                <router-link :to="{ name: 'PresentationalPage' }"><i class="fa-solid fa-arrow-left fa-2x"></i></router-link>
+            </div>
         </div>
       </div>
 
@@ -233,18 +237,21 @@ export default {
 </script>
 
 <style scoped>
+.arrow-back--container{
+    text-align: left;
+    margin: 2em 0;
+}
 .imageDetails{
-  width:100%;
+  width: 100%;
 }
 .d-flex{
   flex-direction: column;
 }
 hr{
-    max-width:2em;
-    margin:2em 0;
+    max-width: 2em;
+    margin: 2em 0;
 }
 .imageInformation{
-    /* margin: 2em; */
     text-align: left;
 }
 .imageInformation--artist{
@@ -284,16 +291,20 @@ hr{
         flex-direction: column;
     }
   .imageInformation{
-      /* margin: 0 2em; */
+      margin: 0 2em;
     }
 }
 @media only screen and (min-width: 1250px) {
   .d-flex{
         flex-direction: row;
+        min-width: 1000px;
     }
   .imageInformation{
-      /* margin: 0 2em; */
+      margin: 0 2em;
       max-width: 30%;
+    }
+    .main-container {
+        padding: 5em 15%;
     }
 }
 
