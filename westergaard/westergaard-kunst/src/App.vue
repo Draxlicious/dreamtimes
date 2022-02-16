@@ -20,7 +20,7 @@ export default {
   box-sizing: border-box;
   }
 html{
-  font-family : "proxima-nova";
+  font-family: "proxima-nova";
   }
 h1{
   font-family: "museo-sans",serif;

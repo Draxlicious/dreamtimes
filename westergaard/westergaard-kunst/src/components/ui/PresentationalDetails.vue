@@ -7,7 +7,15 @@
       <p>{{images.title}}</p> -->
       <div class="d-flex">
         <img :src="destination.imagePath" class="imageDetails"/>
-        <p class="imageInformation">{{destination.information}}</p>
+        <div class="imageInformation">
+            <h2 class="imageInformation--artist">{{ destination.artist }}</h2>
+            <hr>
+            <p class="imageInformation--price">{{ destination.price }}</p>
+            <p class="imageInformation--price">{{ destination.priceWithFrame }}</p>
+            <p class="imageInformation--information">{{ destination.information }}</p>
+            <p class="imageInformation--information">{{ destination.captured }}</p>
+            <p class="imageInformation--information">{{ destination.story }}</p>
+        </div>
       </div>
 
   </main>
@@ -24,106 +32,189 @@ export default {
                     id: 1,
                     title:'image 1',
                     imagePath: require(`../../assets/static/værk_1.jpg`),
-                    information: 'Hans Scherfig: ”Fællesskabet”, 1972. Originalt litografi. 21000 kr.'
+                    artist: 'Moderne, originalt dansk litografi (kunsttryk) af Hans Scherfig (f. København 1905, d. Fredensborg 1979).',
+                    information: '”Fællesskabet” sign. Scherfig 1972, nr. 242/280. Litografi i farver. Lysmål 41 x 60 cm. Rammemål 63 x 80 cm.',
+                    captured: 'Indrammet med knækket hvid passepartout og gylden træramme med en grå stribe. Trykt på L´Arches papir på U.M. Grafik´s værksted i dag Edition København (www.editioncopenhagen.com)',
+                    story: 'Et sjældent værk skabt som kunstnerens kommentar til Danmarks indmeldelse i EU i 1972. Scherfig var imod.',
+                    price: '21.500 kr.'
                 },
                 {
                     id: 2,
                     title:'image 2',
                     imagePath: require(`../../assets/static/værk_2.jpg`),
-                    information: 'Henry Heerup: ”Hjertets dramatik”. Originalt litografi. 5900 kr.'
+                    artist: 'Moderne, originalt dansk litografi (kunstryk) af Henry Heerup (f. Frederiksberg 1907, d. 1993 i Rødovre).',
+                    information: '”Hjertets Dramatik” sign. Heerup. Trykt 1969, nr. 73/310. Litografi i farver. Lysmål 41 x 60 cm. Rammemål 63 x 80 cm. Sjældent udbudt.',
+                    captured: 'Indrammet med knækket hvid passepartout og sølvfarvet træramme. Trykt på Arches papir på I. Chr. Sørensens værksted i Hjørring. I dag Hjørring Grafisk Værksted (www.hgv.dk) ',
+                    story: 'For Heerup var kunsten og legen 2 sider af samme sag. Hans kunst kredsede omkring kvinden, familien og det levede liv. Han var selverklæret formand for nisserne, fløjtespiller, elskede katte, nøgenbader og cyklede til sin sidste dag. Han var grafiker, maler, stenhugger og skraldemodels skaber.  Se Heerup museet i Rødovre (www.heerup.dk).',
+                    price: '5.900 kr.'
                 },
                 {
                     id: 3,
                     title:'image 3',
                     imagePath: require(`../../assets/static/værk_3.jpg`),
-                    information: 'Henry Heerup: ”Øresundsmøde”. Originalt litografi. 3900 kr'
+                    artist: 'Moderne, originalt dansk litografi (kunstryk) af Henry Heerup (f. Frederiksberg 1907, d. 1993 i Rødovre).',
+                    information: '”Øresundsmøde”, sign. Heerup. Trykt 1970, nr. 76/150. Litografi i farver. Lysmål 64 x 75 cm. Rammemål 70 x 90 cm. Sjældent udbudt.',
+                    captured: 'Indrammet med knækket hvid passepartout og gylden træramme. Trykt på Arches papir af Sandberg, Galerie Börjeson, Malmø.',
+                    story: 'For Heerup var kunsten og legen 2 sider af samme sag. Hans kunst kredsede omkring kvinden, familien og det levede liv. Han var selverklæret formand for nisserne, fløjtespiller, elskede katte, nøgenbader og cyklede til sin sidste dag. Han var grafiker, maler, stenhugger og skraldemodels skaber.  Se Heerup museet i Rødovre (www.heerup.dk).',
+                    price: '3.900 kr.'
                 },
                 {
                     id: 4,
                     title:'image 4',
                     imagePath: require(`../../assets/static/værk_4.jpg`),
-                    information: 'Henry Heerup: ”Jeg kysser dig veninde…”. Originalt litografi. 2000 kr.'
+                    artist: 'Moderne, originalt dansk original litografi (kunsttryk) af Henry Heerup (f. Frederiksberg 1907, d. 1993 i Rødovre).',
+                    information: '”Jeg kysser dig veninde…”, sign Heerup, Trykt 1977, nr. nummeret (E.A). Litografi i farver. Lysmål 48 x 61. Rammemål 55 x 73 cm. Sjældent udbudt.',
+                    captured: 'Indrammet med knækket beige passepartout og gylden trætræramme. Trykt på Arches papir af I. Chr. Sørensen, Hjørring for Louisiana kunstmuseum.',
+                    story: 'For Heerup var kunsten og legen 2 sider af samme sag. Hans kunst kredsede omkring kvinden, familien og det levede liv. Han var selverklæret formand for nisserne, fløjtespiller, elskede katte, nøgenbader og cyklede til sin sidste dag. Han var grafiker, maler, stenhugger og skraldemodels skaber.  Se Heerup museet i Rødovre (www.heerup.dk).',
+                    price: '2.000.00 kr. Uden ramme ',
+                    priceWithFrame: '3.400 kr. Indrammet'
                 },
                 {
                     id: 5,
                     title:'image 5',
                     imagePath: require(`../../assets/static/værk_5.jpg`),
-                    information: 'Gynter Grass:” Woman in the Halibut”. Koldnåls radering. 12000 kr.'
+                    artist: 'Moderne, original koldnåls radering af Gynter Grass (f. 1927 i Gdansk i Polen, d. 2015 i Lybeck, Tyskland).',
+                    information: '”Woman in the Halibut”, sign. Gynter Grass, trykt i 1983, nr. XII/L. Koldnålsradering i sort/hvid. Lysmål 17 x 24 cm. Rammemål 50 x 64 cm. Meget sjældent udbudt.',
+                    captured: 'Indrammet u. passepartout med grafisk tryk i papiret og med en sort alu. ramme. Trykt på grafisk papir.',
+                    story: 'Gynter Grass var uddannet stenhugger og grafiker. Modtog som forfatter Nobelprisen i litteratur for ”Bliktrommen” et kæmpe værk om tysk efterkrigstid og historie. Parallelt med grafiker med forkærlighed for fisk, rotter og frøer i groteske betydninger.',
+                    price: '12.000 kr.'
                 },
                 {
                     id: 6,
                     imagePath: require(`../../assets/static/værk_6.jpg`),
-                    information: 'Jon Gislason: ”Selvportræt”. Akvarel. 11000 kr.'
+                    artist: 'Moderne abstrakt og ny ekspressionistisk akvarel af Jon Gislason født 1955 i Ry, Danmark.',
+                    information: '”Selvportræt” sign. Jon Gislason, malet i 1990. Lysmål 56 x 74 cm. Rammemål 60 x 80 cm. Unika.',
+                    captured: 'Indrammet u. passepartout på håndlavet bøttepapir med sølvfarvet alu. ramme.',
+                    story: 'Jon Gislason er en af Danmarks kendte internationale kunstnere fra store udstillinger herhjemme og i Tokyo, New York, Rotterdam m.v. Jon Gislason er super farve ekspressionist beslægtet med 1980-ernes og 1990-ernes ”vilde maleri”. ( www.jongislason.dk ).',
+                    price: '11.000 kr.',
+                    priceWithFrame: '13.500 kr. (m. beige passepartout & dybrød træramme, eller efter aftale).'
                 },
                 {
                     id: 7,
                     imagePath: require(`../../assets/static/værk_7.jpg`),
-                    information: 'Anton Roskens: ”Komposition med figurer”. Original litografi. 3500 kr'
+                    artist: 'Moderne non figurativt og originalt litografi af Anton Roskens f. 1906 i Griendveen og d. 1976ni Amsterdam.',
+                    information: '”Komposition med figurer”, originalt farve litografi, trykt i 1967. Nr. 98/100. Lysmål 30 x 38 cm. Rammemål 41 x 49 cm. ',
+                    captured: 'Indrammet uden passepartout på håndlavet bøttepapir med mat sølvfarvet alu. ramme',
+                    story: 'Anton Roskens var autodidakt kunstner inspireret af afrikansk kunst og siden af COBRA kunsten, specielt i samspil med Appel, Corneille og Constant. (nl.wikipedia.org)',
+                    price: '3.500 kr.',
+                    priceWithFrame: '5.500 kr (indramning efter aftale)'
                 },
                 {   
                     id: 8,
                     imagePath: require(`../../assets/static/værk_8.jpg`),
-                    information: 'Hans Henrik Lerfeldt: ”Kvinde med græshoppe”. Originalt litografi. 3900 kr.'
+                    artist: 'Moderne surrealistisk originalt litografi af Hans Henrik Lerfeldt f. 1946 i Århus og d. 1989 i København, uddannet fra det Kongelige Danske Kunstakademi.',
+                    information: '”Kvinde med græshoppe”, farve litografi, trykt 1988 nr. LII/CXVI. Lysmål 30 x 40 cm. Rammemål 49 x 61 cm. Signeret Lerfeldt.',
+                    captured: 'Indrammet med passepartout på Arches papir med mat sølvfarvet træramme.',
+                    story: 'Lerfeldt var inspireret af Wilhelm Freddies erotiske surrealisme og var fornyer af genren. Kvinden var hans foretrukne motiv. Hans kunst erotisk, ofte sadomasochistiske scener med kvinder og insekter. Han malede med en fotografisk præcision. Jazz kyndig og elsker. En ener i dansk kunst.',
+                    price: '3.900 kr.'
                 },
                 {
                     id: 9,
                     imagePath: require(`../../assets/static/værk_9.jpg`),
-                    information: 'Hans Christian Rylander: ”Et ulige forhold”. Originalt litografi. 3200 kr.'
+                    artist: 'Moderne ekspressionistisk og surrealistisk originalt farve litografi af Hans Christian Rylander f. 1939 i København og d. 2021 i Nykøbing Falster. Uddannet lærer og fra Kunstakademiets kunstpædagogiske skole i København.',
+                    information: '”Et ulige forhold”, farve litografi, trykt i 19 farver 1987. Nr. 126/150. Lysmål 49 x 68. Rammemål 65 x 87 cm. Signeret H C Rylander.',
+                    captured: 'Indrammet med passepartout og trykt på på D’Arches papir og med forgyldt alu ramme. Trykt hos UM Grafik København i dag Edition Copenhagen. www.editioncopenhagen.com',
+                    story: 'Rylander, som blev omtalt som en civiliseret anarkist, sagde han malte mennesker drømme og længsler. I 2004 færdiggjorde Rylander den næsten 100 meter lange udsmykning, ”Erindringsøjeblikke” af Proviantgården på Christiansborg. Et hovedværk, der tog 14 år at færdiggøre. Endnu en ener i dansk nutidig kunst.',
+                    price: '3.200 kr.'
                 },
                 {
                     id: 10,
                     imagePath: require(`../../assets/static/værk_10.jpg`),
-                    information: 'Herman Stilling: ”Den røde trold”. Originalt litografi. 2500 kr.'
+                    artist: 'Maler, grafiker og forfatter Herman Stillings originale farve litografi er med en rød trold. Han er f. 1925 i København og d. 1996 i København. Han var uddannet på Kunstakademiet og troldene blev hans kunstneriske skæbne.',
+                    information: '”Den røde trold”, farve litografi, trykt i 1986. Nr. 196/270. Lysmål 37 x 48 cm. Rammemål 40 x 48 cm. Signeret Herman Stilling',
+                    captured: 'Indrammet med lys passepartout og trykt på D´Arches papir med sølvfarvet alu. ramme. Trykt hos UM Grafik, København (i dag Edition Copenhagen). (www.editioncopenhagen.com)',
+                    story: 'Herman Stilling gik ud af 6. klasse, var ordblind og havde en talefejl, ikke desto mindre blev han forfatter (bl.a. ”En dreng ved navn Herman”) og en værdsat foredragsholder med sin venlighed og humor. Troldene blev hans varemærke, og han koncentrerede sig i lange perioder om collage af f.eks. bordben og om grafikken med mennesker, ikke mindst børn, som gennemgående motiv. I 2003 blev Herman Stillings Museum oprettet i de gamle stalde tilhørende Assistens kirkegård på Nørrebro, København (www.hermanstillingmuseet.dk). På gravstenen formet som et hjerte står der ”HERMAN”.',
+                    price: '2.500 kr.'
                 },
                 {
                     id: 11,
                     imagePath: require(`../../assets/static/værk_11.jpg`),
-                    information: 'Niels Reumert: ”At bære”. Originalt litografi. 2500 kr.'
+                    artist: 'Niels Reumert er ekspressionist, maler og grafiker og står bag en serie af små farve litografier med bl.a. børn som motiv, her ”At bære”, født i Hellerup i 1949. Han er maler og grafiker og uddannet på Kunstakademiet.',
+                    information: '”At bære”, originalt farve litografi er trykt i 1989. Nr. 107/120. Lysmål 24 x 27 cm. Rammemål 36 x 41 cm.',
+                    captured: 'Indrammet med beige passepartout og trykt på D´Arches papir med guld farvet alu. ramme. Trykt første gang og i lille oplag hos UM Grafik, København (i dag Copenhagen Edition). ( www.editioncopenhagen.com)',
+                    story: 'Niels Reumert er maler og grafiker og uddannet på Kunstakademiet og debuterede i 1974 sammen med kunstnersammenslutningen ”Violet sol”. Han er inspireret af etnografika og venners postkort og skaber litografier, raderinger, keramiske krukker og fade, ofte med ”masken” som motiv. Reumert er ekspressionist til fingerspidserne og en voldsom som sådan. Han var en af de betydeligste kunstnere i den legendariske nu nedlagte kunstnergruppe ”Violet sol” (1971-88)',
+                    price: '2.500 kr.'
                 },
                 {
                     id: 12,
                     imagePath: require(`../../assets/static/værk_12.jpg`),
-                    information: 'Pia Andersen: ”Abstrakt, gul, blå, rød”. Originalt litografi. 2400 kr.'
+                    artist: 'Pia Andersen arbejder med originalt litografi, maleri, glas og keramik. Født 1960 i Frederikshavn. Uddannet på kunsthåndværkerskolen i Kolding og Kunstakademiet i Krakow.',
+                    information: '”Abstrakt, gul, blå, rød”, farvelitografi trykt i 2002. Tryk nr. 15/150. Lysmål 21 x 29 cm. Rammemål 36/43 cm. Signeret Pia Andersen.',
+                    captured: 'Indrammet med beige passepartout og trykt på D´Arches papir og med hvidpigmenteret træramme. Trykt af Edition Copenhagen (www.editioncopenhagen.com).',
+                    story: 'Pia Andersens ”konstruktivistiske” og organiske billeder åbner sig på forskellig måde for betragteren.  Hendes inspiration er landskabet, bjergene, årstider, sollyset, disen i varmen, insekter svirren, stubbene på marken og stærke farver.',
+                    price: '2.400 kr.'
                 },
                 {
                     id: 13,
                     imagePath: require(`../../assets/static/værk_13.jpg`),
-                    information: 'Bent Holstein: ”Pelikanen”. Originalt litografi. 2500 kr.'
+                    artist: 'Bent Holstein. Maler og grafiker, født i København i 1942. Han er autodidakt og har skrevet om- og lavet film bl.a. for DR om kunst.',
+                    information: '”Pelikanen”, originalt farve litografi trykt i 1975. Tryk 244/300. Lysmål 55 x 74 cm. Rammemål 75 x 90 cm. Signeret Holstein.',
+                    captured: 'Indrammet med lyst passepartout og trykt på D´Arches papir og med gylden alu. Ramme. Trykt hos Hostrup- Pedersen og Johansen, Valby, København (www.litoggrafisk.dk) ',
+                    story: 'Holstein skildrer de kolde realiteters Verden, varmet af en personlig poesi, der viser en stærk interesse for det truede miljø. Formerne er forenklede, farverne varme jordfarver, og han inspireret af utallige rejser, bl.a. i Sydeuropa. Motivisk maler sjældent mennesker, derimod dyr, landskaber og arkitektur.',
+                    price: '2.500 kr.'
                 },
                 {
                     id: 14,
                     imagePath: require(`../../assets/static/værk_14.jpg`),
-                    information: 'John Hartmann:” The Riot”. Originalt litografi. 3600 kr.'
+                    artist: 'John Hartmann. Maler og grafiker født i Canada, Ontario, 1950, uddannet fra McMaster University i Hamilton 1973. Bosat i Canada.',
+                    information: '”The Riot”, originalt farvelitografi trykt ca. 1984. Tryk 82/190. Lysmål 54 x 71 cm. Rammemål 72 x 88 cm.',
+                    captured: 'Indrammet med lyst passepartout og trykt på D´Arches papir og med sølvfarvet alu. Ramme. Trykt hos U.M. Grafik, København, i dag Copenhagen Edition (www.editioncopenhagen.com). Sjældent udbudt.',
+                    story: 'Hartman er inspireret af bl.a. J.M.W. Turner og Oskar Kokoschaka. Han har fokuseret på landskabet og samtidig på byer som levende organismer, deres historie og erindringer. Hans bekymring er den vestlige civilisations adskillelse fra det levende land og menneskene. Han har rejst over hele Verdenen og opholdt sig i Danmark i 80erne og udførte litografiet ”The Riots” for U.M.Grafik. Han er en højt estimeret kunstner i Canada i dag (www.johnhartman.ca).',
+                    price: '3.600 kr.'
                 },
                 {
                     id: 15,
                     imagePath: require(`../../assets/static/værk_15.jpg`),
-                    information: 'Seppo Mattinen: ”Længsler”. Originalt tryk fra træblok. 4500 kr.'
+                    artist: 'Seppo Mattinen, finsk maler og grafiker f. 1930 i Helsingfors, Finland og d. 2022 i København. Uddannet på Kunstakademiet i København.',
+                    information: '”Længsler”, et originalt træsnit trykt i farver i 1978. Tryk nr. 96/200. Lysmål 43/51 cm og rammemål 63/71. Signeret Seppo Mattinen.',
+                    captured: 'Indrammet med lyst passepartout og trykt på grafisk papir og med en gylden træramme. Udgivet af Clausens kunsthandel, København (www.clausenskunshandel.dk)',
+                    story: 'Mattinen havde en stor del af sit virke Danmark. Hans gennemgående stemning er det humoristiske, underfundige og sørgmodige indtryk fra episoder og handlingsforløb mellem mennesker på landet og i byen, men menneskefigurerne er ofte tynde skikkelser, der er stivnede uden kontakt med hinanden, og dog med en erotisk og nordisk stemning, hændelser i en barokt-naivistisk udtryksform. Mattinen var træsnittets mester.',
+                    price: '4.500 kr.'
                 },
                 {
                     id: 16,
                     imagePath: require(`../../assets/static/værk_16.jpg`),
-                    information: 'Barry L. Wilmont: ”Sommernattens smil”. Originalt litografi. 3500 kr.'
+                    artist: 'Barry Lereng Willmont, f. 1936 I Canada, maler, grafiker og forfatter. Uddannet på Kunstakademiet på København.',
+                    information: '”Sommernattens smil”, originalt litografisk farve tryk fra 1988 nr. 72/90. Lysmål 55/72. Rammemål 72/90. Signeret Wilmont.',
+                    captured: 'Indrammet med lyst passepartout og trykt på D´Arches papir og med en sølvfarvet alu ramme. Trykt af U.M. Grafik, København, i dag Edition Copenhagen (www.editioncopenhagen.com).',
+                    story: 'Willmont har siden sin ungdom haft København som sit faste udgangspunkt. Wilmonts kunst næres af myter fra mange forskellige folkeslag, herunder den indianske kultur, som han har opsøgt og boet sammen med i længere perioder. Siden har han bevæget sig mod det spontane, kraftfulde og dramatisk fortættede og mytiske. Med den brede, fyldte pensel og det glødende farvestof bevæger hans kunst sig på kanten af eksplosionen.',
+                    price: '3.500 kr.'
                 },
                 {
                     id: 17,
                     imagePath: require(`../../assets/static/værk_17.jpg`),
-                    information: 'Gunleif Grube: ”Passion”. Originalt litografi. 2200 kr.'
+                    artist: 'Gunleif Grube f. Thorshavn, Færøerne 1947. Han er maler, grafiker, forfatter og komponerer musik.',
+                    information: '”Passion”, originalt farve litografi, trykt 1992, nr. 41/60. Lysmål 49/63 cm.  Rammemål 60/80 cm. Signeret Gunleif.',
+                    captured: 'Indrammet og trykt på litografisk papir og med en alu sølvramme. Trykt af Galleri Egelund, København, i dag Galleri Christoffer Egelund (www.artdelivery.dk/galleri) ',
+                    story: 'Grube maler ekspressionistisk. Han skaber med linjer, former og farver i et udbrud, både sanseligt drama og spænding, liv, død og afgørelse. Den passionerede røde farve, hvor passion betyder både lidenskab og lidelse er som den sorte farves ekspressive udtryksmåde, der fremkalder stærke følelser. Det menneskelige ansigt er hans motiv.',
+                    price: '2.200 kr.'
                 },
                 {
                     id: 18,
                     imagePath: require(`../../assets/static/værk_18.jpg`),
-                    information: 'Tonny Hørning: ”Særegen skønhed”. Originalt serigrafi. 3900 kr.'
+                    artist: 'Tonny Hørning er en dansk maler og skulptør, autodidakt, oprindeligt uddannet som skiltemaler og født 1941 i Silkeborg.',
+                    information: '”Særegen skønhed” originalt silketryk (serigrafi), skabt i 1975, nr. 77/500 (signatur med nål for neden til venstre i værkets sølvkarton). Lysmål 49/70 cm. Rammemål 60/83 cm. Signeret Hørning.',
+                    captured: 'Indrammet og trykt på sort kardus og sølvfarvet karton og med en sølvfarvet alu ramme. Trygt på kunstnerens værksted.',
+                    story: 'Hørning er billed- og installationskunstner med interesse for rum og særligt rum skabt til refleksion. Således erobres den fysiske lokalitet og omskabes til et eftertænksomhedens rum med mulighed for fordybelse i begreber som tid, orden, kaos og natur. Abstrakte kompositioner rummer både poesi, natur og en helt særegen skønhed.',
+                    price: '3.900 kr.'
                 },
                 {
                     id: 19,
                     imagePath: require(`../../assets/static/værk_19.jpg`),
-                    information: 'Carl Aage Riget: Festival nr. 2”. Originalt serigrafi tryk. 2200 kr.'
+                     artist: 'Carl Aage Riget, dansk maler og billedhugger, oprindeligt skiltemaler, som kunstner autodidakt, f. 1933 i Aarhus og d. 2001 i Nykøbing Sjælland.',
+                    information: '”Festival nr 2” originalt farve silketryk (serigrafi), skabt i 1980. nr. 207/300. Lysmå51/54 cm og rammemål 64/73 cm. Signeret K Riget.',
+                    captured: 'Indrammet og med lys passepartout og trykt på karton og med en sølvfarvet alu ramme.',
+                    story: 'Riget arbejdede med det konstruktive maleri og kendes på sine rene, klare farver, ordnet i geometriske former. Han skaber en harmonisk, levende billedflade ved at sammenstille enkelte elementer som brikker i et forløb. Riget var inspireret af både maskinernes verden og af de moderne samfunds visuelle informationer. Han var medlem af kunstnergruppen Grønningen og Den Blå Citron.',
+                    price: '2.200 kr.'
                 },
                 {
                     id: 20,
                     imagePath: require(`../../assets/static/værk_20.jpg`),
-                    information: 'Per Baagøe:” Landevej i Odsherred”. Originalt litografi. 2600 kr.'
+                    artist: 'Per Baagøe, dansk kunstmaler og grafiker, ekspressionist, uddannet på Kunstakademiet, f. juleaften 1946 i København.',
+                    information: '”Landevej i Odsherred” (bemærk katten i vejsiden) originalt litografi skabt i 1990, nr. XLVIII/L. Signeret Per Baagøe. Lysmål 46/63 cm. Rammemål 64/80 cm. ',
+                    captured: 'Indrammet med lyst passepartout og trykt på L´Arhes papir og med en sølv alu. Ramme.',
+                    story: 'Med brede, kraftige penselstrøg maler Per Baagøe himlen og havet, kystlinjen og de afvekslende strækninger med skovtykninger, stier, klitter og kornmarker, som han omsætter i få, koncentrerede farvetoner, der giver billederne intensitet og dramatik. Hans grafik omfatter bl.a. hans yndlingsmotiver med kvinden og katten. Odsherred er hans foretrukne malerlandskab. Var medlem af kunstnergruppen Violet sol og er med i kunstnersammenslutningen CORNER.',
+                    price: '2.600 kr.'
                 },
                 
             ]
@@ -148,16 +239,62 @@ export default {
 .d-flex{
   flex-direction: column;
 }
+hr{
+    max-width:2em;
+    margin:2em 0;
+}
+.imageInformation{
+    /* margin: 2em; */
+    text-align: left;
+}
+.imageInformation--artist{
+    color: #6a6262;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1.25em;
+}
+.imageInformation--price{
+    margin: 0 0.825em 1em 0;
+    color: #6a6262;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.25em;
+}
+.imageInformation--information{
+    color: #333;
+    font-family: "ff-meta-web-pro",sans-serif;
+    font-weight: normal;
+    line-height: 1.6em;
+    font-family: "proxima-nova";
+    font-size: 20px;
+    line-height: 1.8em;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-style: normal;
+    color: #6a6262;
+}
+@media only screen and (min-width: 650px) {
+  .d-flex{
+        flex-direction: column;
+    }
+  .imageInformation{
+      /* margin: 0 2em; */
+    }
+}
 @media only screen and (min-width: 1250px) {
   .d-flex{
         flex-direction: row;
     }
   .imageInformation{
-      margin: 2em;
+      /* margin: 0 2em; */
+      max-width: 30%;
     }
-  .imageDetails{
-    width:50%;
-  }
 }
 
 </style>
