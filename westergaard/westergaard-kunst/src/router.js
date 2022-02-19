@@ -6,6 +6,7 @@ import TheNews from './pages/litografi/TheNews.vue'
 import TheContact from './pages/litografi/TheContact.vue'
 import NotFound from './pages/NotFound.vue'
 import PresentationalDetails from './components/ui/PresentationalDetails.vue'
+import PresentationalModal from './components/ui/PresentationalModal.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -14,7 +15,9 @@ const router = createRouter({
         {   path: '/presentation', name: 'PresentationalPage', component: ThePresentational,
             children:[
                 {
-                    path: '/presentation/:id'
+                    path: '/presentation/:id',
+                    name: 'presentationId',
+                    component: PresentationalModal
                 }
             ]
         },
