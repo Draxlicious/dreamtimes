@@ -357,12 +357,6 @@ hr{
     .imageDetails{
         width: 70%;
     }
-    .main-container{
-        /* padding: 0 2%; */
-    }
-    .extra_images{
-        /* max-width:1300px; */
-    }
 }
 
 @media only screen and (max-width: 1649px) and (min-width: 1250px)  {

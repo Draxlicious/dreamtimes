@@ -12,13 +12,19 @@
                     </div>
                 <img :src="image.imagePath" alt="">
                 </router-link>
+                <button class="show-details">Show Details</button>
+                <presentational-modal :class="{'active-modal': modal}" @showModal="select">
+
+                </presentational-modal>
                 <!-- <img :src="require(`../../assets/static/${image}`)" alt=""> -->
             </div>
         </section>
 </template>
 
 <script>
+import PresentationalModal from './PresentationalModal.vue'
 export default {
+  components: { PresentationalModal },
     data() {
         return {
             // image: ['IMG_3920.jpg',]
@@ -180,7 +186,7 @@ export default {
     justify-content: center;
     align-items: center;
 }
-.image-information::after{
+/* .image-information::after{
     content:'Show Details';
     position: absolute;
     top: 90%;
@@ -204,8 +210,38 @@ export default {
     justify-content: center;
     align-items: center;
     z-index: 99999;
+} */
+
+.show-details{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: all 200ms linear;
+    text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+    cursor: pointer;
+    font-style: italic;
+    font-family: "ltc-bodoni-175";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    min-width: 100%;
+    min-height:2.2em;
+    background-color:#fff;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    opacity:0;
+    border:none;
 }
+
 .image-cover:hover .image-information{
+    opacity: 1;
+}
+.image-cover:hover .show-details{
     opacity: 1;
 }
 
@@ -213,6 +249,9 @@ export default {
   .grid-section{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
+    }
+    .show-details{
+        min-width: 75%;
     }
 }
 @media only screen and (min-width: 1250px) {

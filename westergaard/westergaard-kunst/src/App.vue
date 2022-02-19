@@ -79,7 +79,7 @@ img{
   }
   @media only screen and (min-width: 1268px) {
     .main-container {
-      padding: 5em 20%;
+      padding: 0 20%;
     }
   }
 

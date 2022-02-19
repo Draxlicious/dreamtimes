@@ -31,17 +31,14 @@ export default {
 img{
     width:100%;
     height: auto;
-    margin-top: 1em;
+    margin: 2em 0;
 }
 .d-flex{
-    /* justify-content: space-between; */
     align-items: center;
     text-align: left;
     flex-direction: column;
 }
 .information-details{
-    /* padding-top: 2em;
-    padding-left: 1.5em; */
     color: #333;
 }
 .contact-title{
@@ -52,8 +49,6 @@ img{
   .information-details{
       font-size: 1.5em;
   }
-  .main-container{
-       padding: 2em 15%;
-  }
+
 }
 </style>
