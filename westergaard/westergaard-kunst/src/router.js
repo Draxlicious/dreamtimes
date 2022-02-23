@@ -7,6 +7,7 @@ import TheContact from './pages/litografi/TheContact.vue'
 import NotFound from './pages/NotFound.vue'
 import PresentationalDetails from './components/ui/PresentationalDetails.vue'
 import PresentationalModal from './components/ui/PresentationalModal.vue'
+import NewsDetails from './components/ui/NewsDetails.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -23,6 +24,7 @@ const router = createRouter({
         },
         {   path: '/presentation/:id', name: 'ImageDetails', component: PresentationalDetails, props: true },
         {   path: '/news', component: TheNews },
+        {   path: '/news/:id', name: 'NewsDetails', component: NewsDetails, props: true },
         {   path: '/contact', component: TheContact },
         {   path: '/:notFound(.*)', component: NotFound },
 

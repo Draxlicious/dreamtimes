@@ -5,16 +5,16 @@
                 <router-link to="/"><h2 class="westergaard--title">Westergaards</h2></router-link>
                 <BurgerMenu v-bind="this.$attrs" @openMenu="openMenu" @closeMenu="closeMenu">
                         <a  href="/">Home</a>
-                        <a href="/Presentation">Presentational</a>
-                        <a href="/News">News</a>
-                        <a href="/Contact">Contact</a>
+                        <a href="/presentation">Presentational</a>
+                        <a href="/news">News</a>
+                        <a href="/contact">Contact</a>
                 </BurgerMenu>
             </ul>
             <ul class="ul__desk">
                     <router-link to="/" :class="{active:selected == 1}" @click="selected = 1">Home</router-link>
-                    <router-link to="/Presentation" :class="{active:selected == 2}" @click="selected = 2">Presentational</router-link>
-                    <router-link to="/News" :class="{active:selected == 3}" @click="selected = 3">News </router-link>
-                    <router-link to="/Contact" :class="{active:selected == 4}" @click="selected = 4">Contact</router-link>
+                    <router-link to="/presentation" :class="{active:selected == 2}" @click="selected = 2">Presentational</router-link>
+                    <router-link to="/news" :class="{active:selected == 3}" @click="selected = 3">News </router-link>
+                    <router-link to="/contact" :class="{active:selected == 4}" @click="selected = 4">Contact</router-link>
             </ul>
         </nav>
         <div>
