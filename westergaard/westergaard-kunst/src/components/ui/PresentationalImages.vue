@@ -12,19 +12,22 @@
                     </div>
                 <img :src="image.imagePath" alt="">
                 </router-link>
-                <button class="show-details">Show Details</button>
-                <presentational-modal :class="{'active-modal': modal}" @showModal="select">
+                <!-- <button class="show-details">Show Details</button> -->
+                <!-- <presentational-modal :class="{'active-modal': modal}" @showModal="select">
 
-                </presentational-modal>
+                </presentational-modal> -->
                 <!-- <img :src="require(`../../assets/static/${image}`)" alt=""> -->
+            </div>
+              <div class="arrow-back--container">
+                <router-link :to="{ name: 'PresentationalPage' }"><i class="fa-solid fa-arrow-up fa-2x"></i></router-link>
             </div>
         </section>
 </template>
 
 <script>
-import PresentationalModal from './PresentationalModal.vue'
+// import PresentationalModal from './PresentationalModal.vue'
 export default {
-  components: { PresentationalModal },
+//   components: { PresentationalModal },
     data() {
         return {
             // image: ['IMG_3920.jpg',]
@@ -146,6 +149,7 @@ export default {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
+    position: relative;
 }
 .image-cover{
     position: relative;
@@ -186,7 +190,7 @@ export default {
     justify-content: center;
     align-items: center;
 }
-/* .image-information::after{
+.image-information::after{
     content:'Show Details';
     position: absolute;
     top: 90%;
@@ -202,17 +206,16 @@ export default {
     letter-spacing: 1px;
     font-weight: 700;
     min-width: 10em;
-    height:65px;
-    width:50px;
+    height:2.2em;
     background-color:#fff;
     text-align: center;
     display:flex;
     justify-content: center;
     align-items: center;
     z-index: 99999;
-} */
+}
 
-.show-details{
+/* .show-details{
     position: absolute;
     top: 90%;
     left: 50%;
@@ -236,7 +239,7 @@ export default {
     z-index: 99999;
     opacity:0;
     border:none;
-}
+} */
 
 .image-cover:hover .image-information{
     opacity: 1;
@@ -244,7 +247,12 @@ export default {
 .image-cover:hover .show-details{
     opacity: 1;
 }
-
+.arrow-back--container{
+  text-align: right;
+  position: absolute;
+  right:-5%;
+  bottom:0;
+}
 @media only screen and (min-width: 650px) {
   .grid-section{
         grid-template-columns: repeat(3, 1fr);
@@ -258,6 +266,9 @@ export default {
   .grid-section{
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2em;
+    }
+    .arrow-back--container{
+        right:-25%;
     }
 }
 

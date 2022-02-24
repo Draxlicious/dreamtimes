@@ -13,7 +13,7 @@
                 <p>
                     <b class="b">
                         <!-- <p>Bemærk: Vi sender kun de indrammede værker med posten, efter aftale. De skal venligst afhentes</p> -->
-                        <p>Ved køb aftales afhentning eller levering fra min side.<br> Ved overdragelsen betaling i form af kontant, bankoverførsel eller mobil pay efter aftale (faktura og kvittering).</p>
+                        <p>Ved køb aftales afhentning eller levering fra min side.<br> Ved overdragelsen betaling i form af kontant, bankoverførsel eller mobil pay efter aftale (faktura og kvittering). 14 dages fortrydelsesret</p>
                     </b>
                 </p>
             </div>

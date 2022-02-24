@@ -12,10 +12,6 @@
                     </div>
                 <img :src="image.imagePath" alt="">
                 </router-link>
-                <button class="show-details">Show Details</button>
-                <presentational-modal :class="{'active-modal': modal}" @showModal="select">
-
-                </presentational-modal>
                 <!-- <img :src="require(`../../assets/static/${image}`)" alt=""> -->
             </div>
         </section>
@@ -91,7 +87,7 @@ export default {
     justify-content: center;
     align-items: center;
 }
-/* .image-information::after{
+.image-information::after{
     content:'Show Details';
     position: absolute;
     top: 90%;
@@ -107,15 +103,14 @@ export default {
     letter-spacing: 1px;
     font-weight: 700;
     min-width: 10em;
-    height:65px;
-    width:50px;
+    height:2.2em;
     background-color:#fff;
     text-align: center;
     display:flex;
     justify-content: center;
     align-items: center;
     z-index: 99999;
-} */
+}
 
 .show-details{
     position: absolute;

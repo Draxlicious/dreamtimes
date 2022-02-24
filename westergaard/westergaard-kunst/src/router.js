@@ -12,7 +12,7 @@ import NewsDetails from './components/ui/NewsDetails.vue'
 const router = createRouter({
     history: createWebHistory(),
     routes:[
-        {   path: '/', component: TheHome },
+        {   path: '/', name: 'HomePage', component: TheHome },
         {   path: '/presentation', name: 'PresentationalPage', component: ThePresentational,
             children:[
                 {
@@ -23,7 +23,7 @@ const router = createRouter({
             ]
         },
         {   path: '/presentation/:id', name: 'ImageDetails', component: PresentationalDetails, props: true },
-        {   path: '/news', component: TheNews },
+        {   path: '/news', name: 'NewsPage', component: TheNews },
         {   path: '/news/:id', name: 'NewsDetails', component: NewsDetails, props: true },
         {   path: '/contact', component: TheContact },
         {   path: '/:notFound(.*)', component: NotFound },

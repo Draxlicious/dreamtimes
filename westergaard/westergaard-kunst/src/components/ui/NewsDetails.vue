@@ -17,7 +17,7 @@
             <p class="imageInformation--information">{{ destination.captured }}</p>
             <p class="imageInformation--information">{{ destination.story }}</p>
             <div class="arrow-back--container">
-                <router-link :to="{ name: 'PresentationalPage' }"><i class="fa-solid fa-arrow-left fa-2x"></i></router-link>
+                <router-link :to="{ name: 'NewsPage' }"><i class="fa-solid fa-arrow-left fa-2x"></i></router-link>
             </div>
         </div>
         

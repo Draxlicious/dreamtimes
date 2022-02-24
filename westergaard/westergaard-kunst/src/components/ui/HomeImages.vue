@@ -23,9 +23,6 @@ export default {
                 {
                     imagePath: require(`../../assets/static/Forside_4.jpg`)
                 },
-                {
-                    imagePath: require(`../../assets/static/Forside_5.jpg`)
-                },
             ]
         }
     }

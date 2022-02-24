@@ -1,5 +1,6 @@
 <template>
   <section class="section-container">
+    
     <h3>Min baggrund</h3>
     <p>
       Min livslange interesse for original litografisk kunst begyndte med et
@@ -44,6 +45,9 @@
       særlig indramning aftales og varetages af os, hvis ønsket.
     </p>
     <b class="artist-title">Palle Westergaard</b>
+    <div class="arrow-back--container">
+        <router-link :to="{ name: 'HomePage' }"><i class="fa-solid fa-arrow-up fa-2x"></i></router-link>
+    </div>
   </section>
 </template>
 
@@ -51,6 +55,7 @@
 .section-container {
   font-size: 1.3em;
   line-height: 1.4;
+  position: relative;
 }
 h3 {
   font-style: italic;
@@ -62,5 +67,16 @@ h3 {
 }
 .section-container p {
   color: #6a6262;
+}
+.arrow-back--container{
+  text-align: right;
+  position: absolute;
+  right:-5%;
+  bottom:0;
+}
+@media only screen and (min-width: 1250px) {
+.arrow-back--container{
+  right:-25%;
+}
 }
 </style>
