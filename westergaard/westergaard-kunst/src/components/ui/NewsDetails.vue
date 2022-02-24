@@ -38,31 +38,31 @@ export default {
   data(){
      return{
        images: [
-                {
-                    id: 1,
-                    title:'image 1',
-                    imagePath: require(`../../assets/static/news/værk_21.jpg`),
-                    imageDetail1: require(`../../assets/static/news/værk_21_1.jpg`),
-                    imageDetail2: require(`../../assets/static/news/værk_21_2.jpg`),
-                    artist: 'Moderne, originalt dansk litografi (kunsttryk) af Hans Scherfig (f. København 1905, d. Fredensborg 1979).',
-                    information: '”Fællesskabet” sign. Scherfig 1972, nr. 242/280. Litografi i farver. Lysmål 41 x 60 cm. Rammemål 63 x 80 cm.',
-                    captured: 'Indrammet med knækket hvid passepartout og gylden træramme med en grå stribe. Trykt på L´Arches papir på U.M. Grafik´s værksted i dag Edition København (www.editioncopenhagen.com)',
-                    story: 'Et sjældent værk skabt som kunstnerens kommentar til Danmarks indmeldelse i EU i 1972. Scherfig var imod.',
-                    price: '21.500 kr.'
-                },
-                {
-                    id: 2,
-                    title:'image 2',
-                    imagePath: require(`../../assets/static/news/værk_22.jpg`),
-                    imageDetail1: require(`../../assets/static/news/værk_22_1.jpg`),
-                    imageDetail2: require(`../../assets/static/news/værk_22_2.jpg`),
-                    artist: 'Moderne, originalt dansk litografi (kunstryk) af Henry Heerup (f. Frederiksberg 1907, d. 1993 i Rødovre).',
-                    information: '”Hjertets Dramatik” sign. Heerup. Trykt 1969, nr. 73/310. Litografi i farver. Lysmål 41 x 60 cm. Rammemål 63 x 80 cm. Sjældent udbudt.',
-                    captured: 'Indrammet med knækket hvid passepartout og sølvfarvet træramme. Trykt på Arches papir på I. Chr. Sørensens værksted i Hjørring. I dag Hjørring Grafisk Værksted (www.hgv.dk) ',
-                    story: 'For Heerup var kunsten og legen 2 sider af samme sag. Hans kunst kredsede omkring kvinden, familien og det levede liv. Han var selverklæret formand for nisserne, fløjtespiller, elskede katte, nøgenbader og cyklede til sin sidste dag. Han var grafiker, maler, stenhugger og skraldemodels skaber.  Se Heerup museet i Rødovre (www.heerup.dk).',
-                    price: '5.900 kr.'
-                },       
-            ]
+           {
+                id: 1,
+                title:'image 1',
+                imagePath: require(`../../assets/static/news/værk_22.jpg`),
+                imageDetail1: require(`../../assets/static/news/værk_22_1.jpg`),
+                imageDetail2: require(`../../assets/static/news/værk_22_2.jpg`),
+                artist: 'Eugene de Sala, dansk autodidakt kunstmaler med det borgerlige navn, Osvald Lykkeberg Salomonsen, født i Randers 1899 og død i København 1987.',
+                information: '”Stil life”, originalt litografi, skabt hos U. M. Grafik, København (i dag edition Copenhagen) i 1984, signeret de sala, nr. 153/260, lysmål 40 x 52 cm og rammemål 55 x 66 cm.',
+                captured: 'Litografi med passepartout og trykt på L ´Aches papir og indrammet med dybblå alu. ramme.',
+                story: 'De Sala var livet igennem en usædvanlig billedkunstner og person. Han valgte bevidst at provokere med sit grønne hår og hvidpudrede ansigt i 1920-erne. Han omtales som kunstrebellen, der introducerede surrealismen i Danmark, stærkt inspireret af indtryk fra Paris af kunstretningerne da-daisme og kubisme. Der er delte meninger om hans kunst, malerier går til 200000 kr på Arne Bruun Rasmussens kunstauktionerne, men handles også til 1000 kr. En ener i dansk kunst.',
+                price: '3.300 kr'
+            },
+            {
+                id: 2,
+                title:'image 2',
+                imagePath: require(`../../assets/static/news/værk_21.jpg`),
+                imageDetail1: require(`../../assets/static/news/værk_21_1.jpg`),
+                imageDetail2: require(`../../assets/static/news/værk_21_2.jpg`),
+                artist: 'Mogens Andersen, dansk kunstmaler og grafiker, uddannet på maleren Peter Bøyesens malerskole. Født 1916 i København, død 2003 i Hellerup.',
+                information: '”Beta”, originalt litografi skabt i slutningen af 1980-erne, som del af en serie med Alfa, Beta, Gamma og Delta på U. M. Grafik, København (i dag Edition Copenhagen) med lysmål 56 x 76 cm og rammemål 64 x 83 cm. Signeret M. A.',
+                captured: 'Litografi indrammet med ”svæv” i en sort træramme og trykt på L`Arches papir.',
+                story: 'Mogens Andersen var inspireret af den tidlige franske modernisme. Boede fra 1945 til 1965 i Paris var meget optaget af fransk lyrisk-abstrakt kunst, som danner baggrund for hans karakteristiske mørke, dynamiske arabesker på lys bund. Mogens Andersen var bl.a. medlem af en af de mest ansete danske kunstsammenslutninger ”Grønningen”.',
+                price: '5.500 kr.'
+            },           
+        ]
      }
   },
   computed:{

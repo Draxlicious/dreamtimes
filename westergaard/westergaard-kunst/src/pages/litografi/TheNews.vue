@@ -27,14 +27,14 @@ export default {
                 {
                     id: 1,
                     title:'image 1',
-                    imagePath: require(`../../assets/static/news/værk_21.jpg`),
-                    information: 'Hans Scherfig: ”Fællesskabet”, 1972. Originalt litografi. 21000 kr.'
+                    imagePath: require(`../../assets/static/news/værk_22.jpg`),
+                    information: 'de sala: Still Life. Original litografi. 3300 kr.'
                 },
                 {
                     id: 2,
                     title:'image 2',
-                    imagePath: require(`../../assets/static/news/værk_22.jpg`),
-                    information: 'Henry Heerup: ”Hjertets dramatik”. Originalt litografi. 5900 kr.'
+                    imagePath: require(`../../assets/static/news/værk_21.jpg`),
+                    information: 'Mogens Andersen: “Beta”. Originalt litografi 5900 kr.'
                 }     
             ]
         }
