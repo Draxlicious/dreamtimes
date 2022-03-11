@@ -263,6 +263,28 @@ export default {
                     story: 'Med brede, kraftige penselstrøg maler Per Baagøe himlen og havet, kystlinjen og de afvekslende strækninger med skovtykninger, stier, klitter og kornmarker, som han omsætter i få, koncentrerede farvetoner, der giver billederne intensitet og dramatik. Hans grafik omfatter bl.a. hans yndlingsmotiver med kvinden og katten. Odsherred er hans foretrukne malerlandskab. Var medlem af kunstnergruppen Violet sol og er med i kunstnersammenslutningen CORNER.',
                     price: '2.600 kr.'
                 },
+                {
+                    id: 21,
+                    imagePath: require(`../../assets/static/news/værk_21.jpg`),
+                    imageDetail1: require(`../../assets/static/news/værk_21_1.jpg`),
+                    imageDetail2: require(`../../assets/static/news/værk_21_2.jpg`),
+                    artist: 'Mogens Andersen, dansk kunstmaler og grafiker, uddannet på maleren Peter Bøyesens malerskole. Født 1916 i København, død 2003 i Hellerup.',
+                    information: '”Beta”, originalt litografi skabt i slutningen af 1980-erne, som del af en serie med Alfa, Beta, Gamma og Delta på U. M. Grafik, København (i dag Edition Copenhagen) med lysmål 56 x 76 cm og rammemål 64 x 83 cm. Signeret M. A.',
+                    captured: 'Litografi indrammet med ”svæv” i en sort træramme og trykt på L`Arches papir.',
+                    story: 'Mogens Andersen var inspireret af den tidlige franske modernisme. Boede fra 1945 til 1965 i Paris var meget optaget af fransk lyrisk-abstrakt kunst, som danner baggrund for hans karakteristiske mørke, dynamiske arabesker på lys bund. Mogens Andersen var bl.a. medlem af en af de mest ansete danske kunstsammenslutninger ”Grønningen”.',
+                    price: '5.500 kr.'
+                },    
+                {
+                    id: 22,
+                    imagePath: require(`../../assets/static/news/værk_22.jpg`),
+                    imageDetail1: require(`../../assets/static/news/værk_22_1.jpg`),
+                    imageDetail2: require(`../../assets/static/news/værk_22_2.jpg`),
+                    artist: 'Eugene de Sala, dansk autodidakt kunstmaler med det borgerlige navn, Osvald Lykkeberg Salomonsen, født i Randers 1899 og død i København 1987.',
+                    information: '”Stil life”, originalt litografi, skabt hos U. M. Grafik, København (i dag edition Copenhagen) i 1984, signeret de sala, nr. 153/260, lysmål 40 x 52 cm og rammemål 55 x 66 cm.',
+                    captured: 'Litografi med passepartout og trykt på L ´Aches papir og indrammet med dybblå alu. ramme.',
+                    story: 'De Sala var livet igennem en usædvanlig billedkunstner og person. Han valgte bevidst at provokere med sit grønne hår og hvidpudrede ansigt i 1920-erne. Han omtales som kunstrebellen, der introducerede surrealismen i Danmark, stærkt inspireret af indtryk fra Paris af kunstretningerne da-daisme og kubisme. Der er delte meninger om hans kunst, malerier går til 200000 kr på Arne Bruun Rasmussens kunstauktionerne, men handles også til 1000 kr. En ener i dansk kunst.',
+                    price: '3.300 kr'
+                },
                 
             ]
      }

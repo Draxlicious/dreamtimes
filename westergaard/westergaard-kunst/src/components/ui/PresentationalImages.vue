@@ -137,6 +137,16 @@ export default {
                     imagePath: require(`../../assets/static/værk_20.jpg`),
                     information: 'Per Baagøe:” Landevej i Odsherred”. Originalt litografi. 2600 kr.'
                 },
+                 {
+                    id: 21,
+                    imagePath: require(`../../assets/static/news/værk_21.jpg`),
+                    information: 'Mogens Andersen: “Beta”. Originalt litografi 5500 kr.'
+                },
+                {
+                    id: 22,
+                    imagePath: require(`../../assets/static/news/værk_22.jpg`),
+                    information: 'de sala: Still Life. Original litografi. 3300 kr.'
+                }   
                 
             ]
         }
