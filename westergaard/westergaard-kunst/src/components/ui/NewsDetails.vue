@@ -75,7 +75,7 @@ export default {
                 },
                 {
                     id: 24,
-                    imagePath: require(`../../assets/static/news/værk_24.jpg`),
+                    imagePath: require(`../../assets/static/news/værk_24_0.jpg`),
                     imageDetail1: require(`../../assets/static/news/værk_24_1.jpg`),
                     imageDetail2: require(`../../assets/static/news/værk_24_2.jpg`),
                     imageDetail3: require(`../../assets/static/news/værk_24_3.jpg`),
