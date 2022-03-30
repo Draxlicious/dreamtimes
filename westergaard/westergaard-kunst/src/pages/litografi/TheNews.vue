@@ -36,15 +36,25 @@ export default {
                 //     imagePath: require(`../../assets/static/news/værk_21.jpg`),
                 //     information: 'Mogens Andersen: “Beta”. Originalt litografi 5900 kr.'
                 // }     
+                // {
+                //     id: 23,
+                //     imagePath: require(`../../assets/static/news/værk_23.jpg`),
+                //     information: 'Osmund Hansen: "Udsigten". Originalt litografi. 1000 kr.'
+                // },
+                // {
+                //     id: 24,
+                //     imagePath: require(`../../assets/static/news/værk_24.jpg`),
+                //     information: 'Bent Karl Jakobsen: Verdenslandskab. Originalt litografi. 4800 kr.'
+                // }     
                 {
-                    id: 23,
-                    imagePath: require(`../../assets/static/news/værk_23.jpg`),
-                    information: 'Osmund Hansen: "Udsigten". Originalt litografi. 1000 kr.'
+                    id: 25,
+                    imagePath: require(`../../assets/static/news/værk_25.jpg`),
+                    information: 'Jørn O.H.Bork: ”Før bristepunktet”. Træsnit. 1500 kr.'
                 },
                 {
-                    id: 24,
-                    imagePath: require(`../../assets/static/news/værk_24.jpg`),
-                    information: 'Bent Karl Jakobsen: Verdenslandskab. Originalt litografi. 4800 kr.'
+                    id: 26,
+                    imagePath: require(`../../assets/static/news/værk_26.jpg`),
+                    information: 'Constant: ”Dansen”. Litografi. 4000 kr.'
                 }     
             ]
         }

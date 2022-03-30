@@ -63,28 +63,27 @@ export default {
         //         price: '5.500 kr.'
         //     },
                 {
-                    id: 23,
-                    imagePath: require(`../../assets/static/news/værk_23.jpg`),
-                    imageDetail1: require(`../../assets/static/news/værk_23_1.jpg`),
-                    imageDetail2: require(`../../assets/static/news/værk_23_2.jpg`),
-                    artist: 'Osmund Hansen, maler og grafiker. Uddannet fra Folmer Bonnens malerskoler 1930 og selvlært, født 1908 i Ordrup og død 1914 på Frederiksberg.',
-                    information: '”Udsigten”, originalt litografi, skabt hos U. M. Grafik (i dag Edition Copenhagen) i 1980-erne, signeret Osmund Hansen, nr. 22/200, lysmål 25 x 33 cm, og rammemål 31 x 41 cm.',
-                    captured: 'Litografi indrammet med ”svæv”, trykt på L`Arshes papir og med sølvgrå alu. ramme.',
-                    story: 'De bløde firkanters besynger og maler. Med udgangspunkt i naturalistisk landskabsmaleri bevægede Osmund Hansen sig mod kompositioner som beherskes af firkanter og balancerer mellem geometrisk klarhed i formen og stoflig sanselighed i farven. Han var ansat hos NESA og efter fyraften, som han sagde, ”kontorchefen, der maler”.',
-                    price: '1.000 kr.'
+                    id: 25,
+                    imagePath: require(`../../assets/static/news/værk_25.jpg`),
+                    imageDetail1: require(`../../assets/static/news/værk_25_1.jpg`),
+                    imageDetail2: require(`../../assets/static/news/værk_25_2.jpg`),
+                    artist: 'Jørn O. H. Bork er dansk kunstmaler og billedhugger, født 1948 og bosat i dag på Mors. Som kunstner autodidakt.',
+                    information: '”Før bristepunktet” er et træsnit trykt i 2011 og signeret J. Bork, nr.212/350, lysmål 23 x 27 cm og rammemål 32 x 38 cm.',
+                    captured: '”Før bristepunktet” er indrammet med passepartout og trykt på ”blødt papir” og har en sort træramme.',
+                    story: 'Værket er inspireret af en beretning fra Knud Rasmussen, om oraklet, Majuaq, som fortalte om festen for hvalens sjæl og om de smukke tanker, der bliver til i menneskets sind og stiger op som bobler fra havets dyb, bobler, der søger luft for at briste... Jørn O.H. Bork har tilbragt 26 år i Grønland og hans værker er inspireret af egne oplevelser og mange af hans værker af eskimoiske eventyr, myter og sagn, indsamlet bl.a. af polarforskeren, Knud Rasmussen. Se www.bork-billedkunstner.dk',
+                    price: '1.500 kr..'
                 },
                 {
-                    id: 24,
-                    imagePath: require(`../../assets/static/news/værk_24_0.jpg`),
-                    imageDetail1: require(`../../assets/static/news/værk_24_1.jpg`),
-                    imageDetail2: require(`../../assets/static/news/værk_24_2.jpg`),
-                    imageDetail3: require(`../../assets/static/news/værk_24_3.jpg`),
-                    artist: 'Bent Karl Jakobsen var dansk billedkunstner, uddannet som værktøjsmager og som kunstner autodidakt. Født 1934 i København og død 2004 i København.',
-                    information: '”Verdenslandskab” er et silketryk, signeret Bent Karl Jakobsen, nr. 13/100, lysmål 50 x 87 cm og rammemål 70 x 106 cm.',
-                    captured: 'Verdenslandskab er indrammet med passepartout og trykt på silketrykspapir og med en massiv hvidmalet træramme.',
-                    story: 'Bent Karl Jakobsen blev omtalt som ”Den glade maler”. Hans interesse for pop-art og for at udforske de kunstneriske afsmitninger fra forbrugersamfundet fik Bent Karl Jakobsen til at rejse til New York i 70-erne. USA´s sociale og mentale spændinger satte sig varige spor i hans billedverden, som han tematiserede i sit maleri, ligesom jazz- musikkens verden optog ham.',
-                    price: '4.800 kr.'
-                }         
+                    id: 26,
+                    imagePath: require(`../../assets/static/news/værk_26.jpg`),
+                    imageDetail1: require(`../../assets/static/news/værk_26_1.jpg`),
+                    imageDetail2: require(`../../assets/static/news/værk_26_2.jpg`),
+                    artist: 'Anton N. Constant, kaldet ”Constant” er født 1920 i Amsterdam og død 2005 i Utrecht, hollandsk kunstmaler og skulptør og uddannet fra kunsthåndværkerskolen og Rigsakademiet for billedkunst i Amsterdam.',
+                    information: '”Dansen” er et originalt litografi trykt i 1980erne i Danmark og formidlet af BØRSEN, www.borsen.dk og signeret Constant, nr. 87/200, lysmål 56 x 40 cm og rammemål 75 x 58 cm.',
+                    captured: '”Dansen” er indrammet med passepartout og har en dyb valnøds farvet træramme (www.dinkunst.dk) ',
+                    story: 'Constant mødte i Paris Asger Jorn og Karel Appel og sammen med flere andre dannede de COBRA-gruppen i 1948. Som de fleste COBRA kunstnere var han optaget af børnetegninger og kunst som rummer en bevidst naiv motivverden af mennesker, dyr og fabelvæsener. COBRA gruppen omfatter i dag de mest anerkendte moderne kunstnere i Europa fra Belgien, Holland og Danmark.',
+                    price: '4.000 kr.'
+                }
         ]
      }
   },

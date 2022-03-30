@@ -146,7 +146,17 @@ export default {
                     id: 22,
                     imagePath: require(`../../assets/static/news/værk_22.jpg`),
                     information: 'de sala: Still Life. Original litografi. 3300 kr.'
-                }   
+                },
+                {
+                    id: 23,
+                    imagePath: require(`../../assets/static/news/værk_23.jpg`),
+                    information: 'Osmund Hansen: "Udsigten". Originalt litografi. 1000 kr.'
+                },
+                {
+                    id: 24,
+                    imagePath: require(`../../assets/static/news/værk_24.jpg`),
+                    information: 'Bent Karl Jakobsen: Verdenslandskab. Originalt litografi. 4800 kr.'
+                }  
                 
             ]
         }

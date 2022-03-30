@@ -285,6 +285,30 @@ export default {
                     story: 'De Sala var livet igennem en usædvanlig billedkunstner og person. Han valgte bevidst at provokere med sit grønne hår og hvidpudrede ansigt i 1920-erne. Han omtales som kunstrebellen, der introducerede surrealismen i Danmark, stærkt inspireret af indtryk fra Paris af kunstretningerne da-daisme og kubisme. Der er delte meninger om hans kunst, malerier går til 200000 kr på Arne Bruun Rasmussens kunstauktionerne, men handles også til 1000 kr. En ener i dansk kunst.',
                     price: '3.300 kr'
                 },
+                {
+                    id: 23,
+                    imagePath: require(`../../assets/static/news/værk_23.jpg`),
+                    imageDetail1: require(`../../assets/static/news/værk_23_1.jpg`),
+                    imageDetail2: require(`../../assets/static/news/værk_23_2.jpg`),
+                    artist: 'Osmund Hansen, maler og grafiker. Uddannet fra Folmer Bonnens malerskoler 1930 og selvlært, født 1908 i Ordrup og død 1914 på Frederiksberg.',
+                    information: '”Udsigten”, originalt litografi, skabt hos U. M. Grafik (i dag Edition Copenhagen) i 1980-erne, signeret Osmund Hansen, nr. 22/200, lysmål 25 x 33 cm, og rammemål 31 x 41 cm.',
+                    captured: 'Litografi indrammet med ”svæv”, trykt på L`Arshes papir og med sølvgrå alu. ramme.',
+                    story: 'De bløde firkanters besynger og maler. Med udgangspunkt i naturalistisk landskabsmaleri bevægede Osmund Hansen sig mod kompositioner som beherskes af firkanter og balancerer mellem geometrisk klarhed i formen og stoflig sanselighed i farven. Han var ansat hos NESA og efter fyraften, som han sagde, ”kontorchefen, der maler”.',
+                    price: '1.000 kr.'
+                },
+                {
+                    id: 24,
+                    imagePath: require(`../../assets/static/news/værk_24_0.jpg`),
+                    imageDetail1: require(`../../assets/static/news/værk_24_1.jpg`),
+                    imageDetail2: require(`../../assets/static/news/værk_24_2.jpg`),
+                    imageDetail3: require(`../../assets/static/news/værk_24_3.jpg`),
+                    artist: 'Bent Karl Jakobsen var dansk billedkunstner, uddannet som værktøjsmager og som kunstner autodidakt. Født 1934 i København og død 2004 i København.',
+                    information: '”Verdenslandskab” er et silketryk, signeret Bent Karl Jakobsen, nr. 13/100, lysmål 50 x 87 cm og rammemål 70 x 106 cm.',
+                    captured: 'Verdenslandskab er indrammet med passepartout og trykt på silketrykspapir og med en massiv hvidmalet træramme.',
+                    story: 'Bent Karl Jakobsen blev omtalt som ”Den glade maler”. Hans interesse for pop-art og for at udforske de kunstneriske afsmitninger fra forbrugersamfundet fik Bent Karl Jakobsen til at rejse til New York i 70-erne. USA´s sociale og mentale spændinger satte sig varige spor i hans billedverden, som han tematiserede i sit maleri, ligesom jazz- musikkens verden optog ham.',
+                    price: '4.800 kr.'
+                } 
+                
                 
             ]
      }
